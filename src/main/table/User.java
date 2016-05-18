@@ -1,8 +1,7 @@
 package table;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by FromxSoul on 17.05.2016.
@@ -25,11 +24,10 @@ public class User {
     @Column(name = "shop_experience")
     private int shopExperience;
 
-    @ManyToMany
-    @JoinTable(name = "user_products",
-                joinColumns = {@JoinColumn(name = "user_id")},
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "user_products", joinColumns = {@JoinColumn(name = "user_id")},
             inverseJoinColumns = {@JoinColumn(name = "product_id")})
-    private Set<Product> products = new HashSet<Product>();
+    private List<Product> products = new ArrayList<Product>();
 
     public User() {
 
@@ -67,11 +65,11 @@ public class User {
         this.shopExperience = shopExperience;
     }
 
-    public Set<Product> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(Set<Product> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - m2m@localhost" uuid="db036b1c-644a-4037-9790-d759bd3a5700">
+    <data-source name="MySQL - m2m@localhost" uuid="6fcd40fd-21d9-4bf8-9b35-b8f5aa824f5d">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>m2m.*</schema-pattern>
-      <default-schemas>m2m.*</default-schemas>
     </data-source>
   </component>
 </project>

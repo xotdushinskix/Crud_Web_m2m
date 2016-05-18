@@ -7,6 +7,7 @@ import util.HibernateUtil;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by FromxSoul on 17.05.2016.
@@ -87,7 +88,7 @@ public class UserDaoImpl implements UserDao {
         Session session = null;
         try {
             session = HibernateUtil.getSessionFactory().openSession();
-            session.beginTransaction();
+            //session.beginTransaction();
             users = session.createCriteria(User.class).list();
         } catch (Exception e) {
             e.printStackTrace();
