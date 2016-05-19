@@ -13,7 +13,7 @@
     <title>Add or edit user</title>
 </head>
 <body>
-    <form action="ShowAll" method="post">
+    <form action="AddEditUser" method="post">
         User ID : <input type="text" readonly="readonly" name="userIdAddEditPage" value="<c:out value="${user.userId}" />" />
         <br/>
         First Name : <input type="text" name="firstname" value="<c:out value="${user.firstName}" />" />

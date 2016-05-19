@@ -56,6 +56,7 @@ public class ShowAll extends Forward {
             try {
                 userDao.deleteUser(userDao.getUser(userId));
                 request.setAttribute("users", userDao.getAllUsers());
+                request.setAttribute("products", productDao.getAllProducts());
                 forwardString = SHOW_ALL;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -78,6 +79,7 @@ public class ShowAll extends Forward {
             try {
                 productDao.deleteProduct(productDao.getProduct(productId));
                 request.setAttribute("products", productDao.getAllProducts());
+                request.setAttribute("users", userDao.getAllUsers());
                 forwardString = SHOW_ALL;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -88,83 +90,5 @@ public class ShowAll extends Forward {
 
         super.forward(forwardString, request, response);
     }
-
-
-
-
-
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HibernateUtil.getSessionFactory();
-
-
-
-        String action = request.getParameter("actionAD");
-//        if (action.equals("addUser")) {
-
-            String firstName = request.getParameter("firstname");
-            String lastName = request.getParameter("lastname");
-            int shopExperience = Integer.parseInt(request.getParameter("shopexperience"));
-
-            user.setFirstName(firstName);
-            user.setLastName(lastName);
-            user.setShopExperience(shopExperience);
-
-            String userId = request.getParameter("userIdAddEditPage");
-            if (userId.isEmpty()) {
-                try {
-                    userDao.addUser(user);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            } else {
-                user.setUserId(Integer.parseInt(userId));
-                try {
-                    userDao.editUser(user);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-            try {
-                request.setAttribute("users", userDao.getAllUsers());
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
-        super.forward(SHOW_ALL, request, response);
-
-        } //else  if (action.equals("addProduct")) {
-
-//            String productBrand = request.getParameter("productbrand");
-//            String productModel = request.getParameter("productmodel");
-//            int productMPN = Integer.parseInt(request.getParameter("productmpn"));
-//
-//            product.setProductBrand(productBrand);
-//            product.setProductModel(productModel);
-//            product.setProductMPN(productMPN);
-//
-//            String productId = request.getParameter("productIdAddEditPage");
-//            if (productId.isEmpty()) {
-//                try {
-//                    productDao.addProduct(product);
-//                } catch (SQLException e) {
-//                    e.printStackTrace();
-//                }
-//            } else {
-//                product.setProductId(Integer.parseInt(productId));
-//                try {
-//                    productDao.editProduct(product);
-//                } catch (SQLException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            try {
-//                request.setAttribute("products", productDao.getAllProducts());
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        super.forward(SHOW_ALL, request, response);
-//    }
 }
+

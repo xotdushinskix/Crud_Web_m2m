@@ -41,7 +41,7 @@
     </c:forEach>
     </tbody>
 </table>
-<p><a href="ShowAll?actionAD=addUser">Add User</a></p>
+<p><a href="ShowAll?action=addUser">Add User</a></p>
 <br>
 
 <h3>All products list:</h3>
@@ -69,6 +69,6 @@
     </c:forEach>
     </tbody>
 </table>
-<p><a href="ShowAll?actionAD=addProduct">Add Product</a></p>
+<p><a href="ShowAll?action=addProduct">Add Product</a></p>
 </body>
 </html>

@@ -13,7 +13,7 @@
     <title>Add or edit user</title>
 </head>
 <body>
-<form action="ShowAll" method="post">
+<form action="AddEditProduct" method="post">
     Product ID : <input type="text" readonly="readonly" name="productIdAddEditPage" value="<c:out value="${product.productId}" />" />
     <br/>
     Product Brand : <input type="text" name="productbrand" value="<c:out value="${product.productBrand}" />" />

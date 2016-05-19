@@ -16,11 +16,31 @@
     <servlet-name>ShowAll</servlet-name>
     <servlet-class>controller.ShowAll</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>AddEditUser</servlet-name>
+    <servlet-class>controller.AddEditUser</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AddEditProduct</servlet-name>
+    <servlet-class>controller.AddEditProduct</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
     <servlet-name>ShowAll</servlet-name>
     <url-pattern>/ShowAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddEditUser</servlet-name>
+    <url-pattern>/AddEditUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddEditProduct</servlet-name>
+    <url-pattern>/AddEditProduct</url-pattern>
   </servlet-mapping>
 
 
