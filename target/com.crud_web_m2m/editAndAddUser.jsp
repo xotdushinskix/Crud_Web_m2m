@@ -13,7 +13,7 @@
     <title>Add or edit user</title>
 </head>
 <body>
-    <form action="AddEditUser" method="post">
+    <form action="AddEdit" method="post">
         User ID : <input type="text" readonly="readonly" name="userIdAddEditPage" value="<c:out value="${user.userId}" />" />
         <br/>
         First Name : <input type="text" name="firstname" value="<c:out value="${user.firstName}" />" />
@@ -22,7 +22,7 @@
         <br/>
         Shop Experience : <input type="text" name="shopexperience" value="<c:out value="${user.shopExperience}" />" />
         <br/>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" name="addEditUser"/>
     </form>
 </body>
 </html>

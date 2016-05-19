@@ -8,6 +8,7 @@ import table.User;
 import util.HibernateUtil;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import java.sql.SQLException;
  * Created by nikita on 18.05.16.
  */
 @SuppressWarnings("Since15")
+@WebServlet("/ShowAll")
 public class ShowAll extends Forward {
 
     private static String SHOW_ALL = "/allUserProduct.jsp";
@@ -36,8 +38,7 @@ public class ShowAll extends Forward {
         String action = request.getParameter("action");
         if (action.equals("showAllUserAndProduct")) {
             try {
-                request.setAttribute("users", userDao.getAllUsers());
-                request.setAttribute("products", productDao.getAllProducts());
+                super.requestAction(request);
                 forwardString = SHOW_ALL;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -55,8 +56,7 @@ public class ShowAll extends Forward {
             int userId = Integer.parseInt(request.getParameter("userId"));
             try {
                 userDao.deleteUser(userDao.getUser(userId));
-                request.setAttribute("users", userDao.getAllUsers());
-                request.setAttribute("products", productDao.getAllProducts());
+                super.requestAction(request);
                 forwardString = SHOW_ALL;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -78,8 +78,7 @@ public class ShowAll extends Forward {
             int productId = Integer.parseInt(request.getParameter("productId"));
             try {
                 productDao.deleteProduct(productDao.getProduct(productId));
-                request.setAttribute("products", productDao.getAllProducts());
-                request.setAttribute("users", userDao.getAllUsers());
+                super.requestAction(request);
                 forwardString = SHOW_ALL;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -87,7 +86,6 @@ public class ShowAll extends Forward {
         } else if (action.equals("addProduct")) {
             forwardString = ADD_EDIT_PRODUCT_PAGE;
         }
-
         super.forward(forwardString, request, response);
     }
 }

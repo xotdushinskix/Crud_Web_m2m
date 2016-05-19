@@ -13,7 +13,7 @@
     <title>Add or edit user</title>
 </head>
 <body>
-<form action="AddEditProduct" method="post">
+<form action="AddEdit" method="post">
     Product ID : <input type="text" readonly="readonly" name="productIdAddEditPage" value="<c:out value="${product.productId}" />" />
     <br/>
     Product Brand : <input type="text" name="productbrand" value="<c:out value="${product.productBrand}" />" />
@@ -22,7 +22,7 @@
     <br/>
     Product MPN : <input type="text" name="productmpn" value="<c:out value="${product.productMPN}" />" />
     <br/>
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Submit" name="addEditProduct"/>
 </form>
 </body>
 </html>
