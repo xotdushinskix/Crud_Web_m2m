@@ -1,6 +1,7 @@
 package dao_impl;
 
 import dao.UserDao;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import table.User;
 import util.HibernateUtil;
@@ -66,6 +67,8 @@ public class UserDaoImpl implements UserDao {
         }
     }
 
+
+
     public User getUser(int userId) throws SQLException {
         User result = null;
         Session session = null;
@@ -82,6 +85,46 @@ public class UserDaoImpl implements UserDao {
         }
         return result;
     }
+
+
+
+    public User getUserFirstName(String firstName) throws SQLException {
+        User result = null;
+        Session session = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            session.beginTransaction();
+            result = session.get(User.class, firstName);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if ((session != null) && (session.isOpen())) {
+                session.close();
+            }
+        }
+        return result;
+    }
+
+
+
+    public User getUserLastName(String lastName) throws SQLException {
+        User result = null;
+        Session session = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            session.beginTransaction();
+            result = session.get(User.class, lastName);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if ((session != null) && (session.isOpen())) {
+                session.close();
+            }
+        }
+        return result;
+    }
+
+
 
     public List<User> getAllUsers() throws SQLException {
         List<User>users = null;

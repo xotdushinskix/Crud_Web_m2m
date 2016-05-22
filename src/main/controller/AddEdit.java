@@ -34,10 +34,12 @@ public class AddEdit extends Forward {
 
             String productBrand = request.getParameter("productbrand");
             String productModel = request.getParameter("productmodel");
+            int productStock = Integer.parseInt(request.getParameter("productstock"));
             int productMPN = Integer.parseInt(request.getParameter("productmpn"));
 
             product.setProductBrand(productBrand);
             product.setProductModel(productModel);
+            product.setProductStock(productStock);
             product.setProductMPN(productMPN);
 
             String productId = request.getParameter("productIdAddEditPage");

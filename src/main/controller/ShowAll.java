@@ -24,6 +24,8 @@ public class ShowAll extends Forward {
     private static String SHOW_ALL = "/allUserProduct.jsp";
     private static String ADD_EDIT_USER_PAGE = "/editAndAddUser.jsp";
     private static String ADD_EDIT_PRODUCT_PAGE = "/editAndADDProduct.jsp";
+    private static String MAKE_PURCHASE = "/makePurchase.jsp";
+    private static String SHOW_PURCHASE = "/showPurchase.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
@@ -85,7 +87,27 @@ public class ShowAll extends Forward {
             }
         } else if (action.equals("addProduct")) {
             forwardString = ADD_EDIT_PRODUCT_PAGE;
+        } else if (action.equals("purchase")){
+            int productId = Integer.parseInt(request.getParameter("productId"));
+            try {
+                product = productDao.getProduct(productId);
+                request.setAttribute("product", product);
+                forwardString = MAKE_PURCHASE;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else if (action.equals("watchUserPurchases")) {
+            int userId = Integer.parseInt(request.getParameter("userId"));
+            try {
+                user = userDao.getUser(userId);
+                //user.getProducts();
+                request.setAttribute("user", user);
+                forwardString = SHOW_PURCHASE;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
+
         super.forward(forwardString, request, response);
     }
 }

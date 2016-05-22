@@ -20,6 +20,8 @@
     <br/>
     Product Model : <input type="text" name="productmodel" value="<c:out value="${product.productModel}" />" />
     <br/>
+    Product Stock : <input type="text" name="productstock" value="<c:out value="${product.productStock}" />" />
+    <br/>
     Product MPN : <input type="text" name="productmpn" value="<c:out value="${product.productMPN}" />" />
     <br/>
     <input type="submit" value="Submit" name="addEditProduct"/>

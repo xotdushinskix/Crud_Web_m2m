@@ -84,7 +84,7 @@ public class ProductDaoImpl implements ProductDao {
         Session session = null;
         try {
             session = HibernateUtil.getSessionFactory().openSession();
-            //session.beginTransaction();
+            session.beginTransaction();
             products = session.createCriteria(Product.class).list();
         } catch (Exception e) {
             e.printStackTrace();

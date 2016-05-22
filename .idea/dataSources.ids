@@ -1,80 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - m2m@localhost" uuid="6fcd40fd-21d9-4bf8-9b35-b8f5aa824f5d">
-    <database-info product="MySQL" version="5.6.27-0ubuntu1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+  <data-source name="MySQL - m2m@localhost" uuid="2dea0e2d-a37d-4c36-8ef0-ac45ab18c508">
+    <database-info product="MySQL" version="5.5.49" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
-    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
-    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
-      <schema id="1" name="m2m"/>
-      <table id="2" parent="1" name="product_m2m"/>
-      <table id="3" parent="1" name="user_m2m"/>
-      <table id="4" parent="1" name="user_products"/>
-      <column id="5" parent="2" name="product_id">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-        <sequence-identity>1</sequence-identity>
-      </column>
-      <column id="6" parent="2" name="product_brand">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="7" parent="2" name="product_mpn">
-        <data-type>int(11)</data-type>
-      </column>
-      <column id="8" parent="2" name="product_model">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <key id="9" parent="2" name="PRIMARY">
-        <columns>product_id</columns>
-        <primary>1</primary>
-      </key>
-      <column id="10" parent="3" name="user_id">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-        <sequence-identity>1</sequence-identity>
-      </column>
-      <column id="11" parent="3" name="firts_name">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="12" parent="3" name="last_name">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="13" parent="3" name="shop_experience">
-        <data-type>int(11)</data-type>
-      </column>
-      <key id="14" parent="3" name="PRIMARY">
-        <columns>user_id</columns>
-        <primary>1</primary>
-      </key>
-      <column id="15" parent="4" name="user_id">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <column id="16" parent="4" name="product_id">
-        <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
-      </column>
-      <index id="17" parent="4" name="FK8sw80aosfryokc2er3uvycbhj">
-        <columns>user_id</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <index id="18" parent="4" name="FKesgbdo462qigma8v3frlht95s">
-        <columns>product_id</columns>
-        <desc-columns></desc-columns>
-      </index>
-      <foreign-key id="19" parent="4" name="FK8sw80aosfryokc2er3uvycbhj">
-        <columns>user_id</columns>
-        <ref-key>~.user_m2m.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <foreign-key id="20" parent="4" name="FKesgbdo462qigma8v3frlht95s">
-        <columns>product_id</columns>
-        <ref-key>~.product_m2m.PRIMARY</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-    </database-model>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="m2m"/>
+    <table name="product_m2m" schema="" catalog="m2m" type="TABLE">
+      <column name="product_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="product_brand" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="product_mpn" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="product_model" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="stock" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="product_id"/>
+      <exported-key name="FKesgbdo462qigma8v3frlht95s" table="user_products" schema="" catalog="m2m" columns="product_id"/>
+    </table>
+    <table name="user_m2m" schema="" catalog="m2m" type="TABLE">
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="firts_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="shop_experience" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+      <exported-key name="FK8sw80aosfryokc2er3uvycbhj" table="user_products" schema="" catalog="m2m" columns="user_id"/>
+    </table>
+    <table name="user_products" schema="" catalog="m2m" type="TABLE">
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="product_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <foreign-key name="FK8sw80aosfryokc2er3uvycbhj" columns="user_id" ref-table="user_m2m" ref-schema="" ref-catalog="m2m" ref-columns="user_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKesgbdo462qigma8v3frlht95s" columns="product_id" ref-table="product_m2m" ref-schema="" ref-catalog="m2m" ref-columns="product_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK8sw80aosfryokc2er3uvycbhj" unique="false" columns="user_id"/>
+      <index name="FKesgbdo462qigma8v3frlht95s" unique="false" columns="product_id"/>
+    </table>
   </data-source>
 </component>

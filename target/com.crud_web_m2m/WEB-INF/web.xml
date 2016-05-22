@@ -12,29 +12,5 @@
         version="2.5">
 
 
-  <!--<servlet>-->
-    <!--<servlet-name>ShowAll</servlet-name>-->
-    <!--<servlet-class>controller.ShowAll</servlet-class>-->
-  <!--</servlet>-->
-  <!---->
-  <!--<servlet>-->
-    <!--<servlet-name>AddEdit</servlet-name>-->
-    <!--<servlet-class>controller.AddEdit</servlet-class>-->
-  <!--</servlet>-->
-
-
-  <!---->
-
-  <!--<servlet-mapping>-->
-    <!--<servlet-name>ShowAll</servlet-name>-->
-    <!--<url-pattern>/ShowAll</url-pattern>-->
-  <!--</servlet-mapping>-->
-
-  <!--<servlet-mapping>-->
-    <!--<servlet-name>AddEdit</servlet-name>-->
-    <!--<url-pattern>/AddEdit</url-pattern>-->
-  <!--</servlet-mapping>-->
-  <!---->
-
   <display-name>Archetype Created Web Application</display-name>
 </web-app>

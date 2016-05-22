@@ -26,6 +26,7 @@
         <th>Shop Experience</th>
         <th>Update</th>
         <th>Delete</th>
+        <th>Show purchases</th>
     </tr>
     </thead>
     <tbody>
@@ -37,6 +38,7 @@
             <td>${user1.shopExperience}</td>
             <td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>
             <td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>
+            <td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Customer purchases</a></td>
         </tr>
     </c:forEach>
     </tbody>
@@ -51,9 +53,11 @@
         <th>Product Id</th>
         <th>Brand</th>
         <th>Model</th>
+        <th>Stock</th>
         <th>MPN</th>
         <th>Update</th>
         <th>Delete</th>
+        <th>Add to cart</th>
     </tr>
     </thead>
     <tbody>
@@ -62,13 +66,17 @@
             <td>${product1.productId}</td>
             <td>${product1.productBrand}</td>
             <td>${product1.productModel}</td>
+            <td>${product1.productStock}</td>
             <td>${product1.productMPN}</td>
             <td><a href="ShowAll?action=updateProduct&productId=<c:out value="${product1.productId}"/>">Update</a></td>
             <td><a href="ShowAll?action=deleteProduct&productId=<c:out value="${product1.productId}"/>">Delete</a></td>
+            <td><a href="ShowAll?action=purchase&productId=<c:out value="${product1.productId}"/>">To cart</a></td>
         </tr>
     </c:forEach>
     </tbody>
 </table>
 <p><a href="ShowAll?action=addProduct">Add Product</a></p>
+<%--<br>--%>
+<%--<p><a href="ShowAll?action=purchase">Make Purchase</a></p>--%>
 </body>
 </html>

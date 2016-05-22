@@ -21,6 +21,9 @@ public class Product {
     @Column(name = "product_model")
     private String productModel;
 
+    @Column(name = "stock")
+    private int productStock;
+
     @Column(name = "product_mpn")
     private int productMPN;
 
@@ -53,6 +56,14 @@ public class Product {
 
     public void setProductModel(String productModel) {
         this.productModel = productModel;
+    }
+
+    public int getProductStock() {
+        return productStock;
+    }
+
+    public void setProductStock(int productStock) {
+        this.productStock = productStock;
     }
 
     public int getProductMPN() {
