@@ -27,7 +27,7 @@ public class Product {
     @Column(name = "product_mpn")
     private int productMPN;
 
-    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "products", cascade = CascadeType.ALL)
+    @ManyToMany
     private List<User> users = new ArrayList<User>();
 
     public Product() {

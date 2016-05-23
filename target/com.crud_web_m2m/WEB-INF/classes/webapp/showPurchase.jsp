@@ -30,7 +30,18 @@
         <td><c:out value="${user.firstName}" /></td>
         <td><c:out value="${user.lastName}" /></td>
         <td><c:out value="${user.shopExperience}" /></td>
-        <td><c:out value="${user.products}" /></td>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <c:forEach items="${products}" var="productP">
+                  <td>${productP.productBrand}</td>
+                  <td>${productP.productModel}</td>
+                </c:forEach>
+              </tr>
+            </tbody>
+          </table>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -5,6 +5,7 @@ import dao.UserDao;
 import fabric.Fabric;
 import table.Product;
 import table.User;
+import util.HibernateUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,16 +28,13 @@ public class MakePurchase extends Forward {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HibernateUtil.getSessionFactory();
         String forwardString = null;
 
         int userId = Integer.parseInt(request.getParameter("userIDpurchase"));
 
         int productId = Integer.parseInt(request.getParameter("productIdForPurchase"));
         int productStock = Integer.parseInt(request.getParameter("productStockForPurchase"));
-
-        System.out.println(userId);
-        System.out.println(productId);
-        System.out.println(productStock);
 
         try {
             user = userDao.getUser(userId);

@@ -32,42 +32,5 @@
     <input type="submit" value="Make Purchase!" name="makePurchase"/>
   </form>
 
-
-  <%--<h3>Select your customer</h3>--%>
-  <%--<form action="MakePurchase" method="get">--%>
-    <%--User ID : <input type="text" name="userIDpurchase"/>--%>
-    <%--&lt;%&ndash;User Last Name : <input type="text" name="userLastNpurchase"/>&ndash;%&gt;--%>
-    <%--<br/>--%>
-    <%--<h3>All products list:</h3>--%>
-    <%--<table border="2">--%>
-      <%--<thead>--%>
-      <%--<tr>--%>
-        <%--<th>Product Id</th>--%>
-        <%--<th>Brand</th>--%>
-        <%--<th>Model</th>--%>
-        <%--<th>Stock</th>--%>
-        <%--<th>MPN</th>--%>
-        <%--<th>Add to Cart</th>--%>
-      <%--</tr>--%>
-      <%--</thead>--%>
-      <%--<tbody>--%>
-      <%--<c:forEach items="${products}" var="product1">--%>
-        <%--<tr>--%>
-          <%--<td>--%>
-            <%--<input type="text" readonly="readonly" name="productIdforPurchase" value="<c:out value="${product1.productId}" />" />--%>
-          <%--</td>--%>
-          <%--<td>${product1.productBrand}</td>--%>
-          <%--<td>${product1.productModel}</td>--%>
-          <%--<td>--%>
-            <%--<input type="text" readonly="readonly" name="productStockforPurchase" value="<c:out value="${product1.productStock}" />" />--%>
-          <%--</td>--%>
-          <%--<td>${product1.productMPN}</td>--%>
-          <%--<td><input type="text" name="productQuantityToCart"/></td>--%>
-        <%--</tr>--%>
-      <%--</c:forEach>--%>
-      <%--</tbody>--%>
-    <%--</table>--%>
-    <%--<input type="submit" value="Make Purchase!" />--%>
-  <%--</form>--%>
 </body>
 </html>

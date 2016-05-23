@@ -24,7 +24,7 @@ public class User {
     @Column(name = "shop_experience")
     private int shopExperience;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany
     @JoinTable(name = "user_products", joinColumns = {@JoinColumn(name = "user_id")},
             inverseJoinColumns = {@JoinColumn(name = "product_id")})
     private List<Product> products = new ArrayList<Product>();
