@@ -31,14 +31,22 @@
         <td><c:out value="${user.lastName}" /></td>
         <td><c:out value="${user.shopExperience}" /></td>
         <td>
-          <table>
+          <table border="1">
+            <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Quantity</th>
+            </tr>
+            </thead>
             <tbody>
+              <c:forEach items="${userProducts}" var="productP">
               <tr>
-                <c:forEach items="${products}" var="productP">
-                  <td>${productP.productBrand}</td>
-                  <td>${productP.productModel}</td>
-                </c:forEach>
+                <td>${productP.product.productBrand}</td>
+                <td>${productP.product.productModel}</td>
+                <td>${productP.boughtQuantity}</td>
               </tr>
+              </c:forEach>
             </tbody>
           </table>
         </td>

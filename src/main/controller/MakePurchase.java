@@ -5,6 +5,7 @@ import dao.UserDao;
 import fabric.Fabric;
 import table.Product;
 import table.User;
+import table.UserProducts;
 import util.HibernateUtil;
 
 import javax.servlet.ServletException;
@@ -31,31 +32,40 @@ public class MakePurchase extends Forward {
         HibernateUtil.getSessionFactory();
         String forwardString = null;
 
-        int userId = Integer.parseInt(request.getParameter("userIDpurchase"));
+        if (request.getParameter("makePurchase") !=null) {
+            int userId = Integer.parseInt(request.getParameter("userIDpurchase"));
 
-        int productId = Integer.parseInt(request.getParameter("productIdForPurchase"));
-        int productStock = Integer.parseInt(request.getParameter("productStockForPurchase"));
+            int productId = Integer.parseInt(request.getParameter("productIdForPurchase"));
+            int productStock = Integer.parseInt(request.getParameter("productStockForPurchase"));
 
-        try {
-            user = userDao.getUser(userId);
-            product = productDao.getProduct(productId);
-            int stock = product.getProductStock() - productStock;
-            product.setProductStock(stock);
+            try {
+                user = userDao.getUser(userId);
+                product = productDao.getProduct(productId);
+                int stock = product.getProductStock() - productStock;
+                product.setProductStock(stock);
 
-            user.getProducts().add(product);
-            product.getUsers().add(user);
+                UserProducts userProducts = new UserProducts();
+                userProducts.setBoughtQuantity(productStock);
+                userProducts.setProduct(product);
+                userProducts.setUser(user);
 
-            userDao.editUser(user);
-            productDao.editProduct(product);
+                user.getUserProducts().add(userProducts);
+                product.getUserProducts().add(userProducts);
 
-            super.requestAction(request);
-            forwardString = SHOW_ALL;
+                userDao.editUser(user);
+                productDao.editProduct(product);
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+                super.requestAction(request);
+                forwardString = SHOW_ALL;
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
         super.forward(forwardString, request, response);
 
     }
+
+
 }

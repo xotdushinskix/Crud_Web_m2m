@@ -100,9 +100,8 @@ public class ShowAll extends Forward {
             int userId = Integer.parseInt(request.getParameter("userId"));
             try {
                 user = userDao.getUser(userId);
-                //user.getProducts();
                 request.setAttribute("user", user);
-                request.setAttribute("products", user.getProducts());
+                request.setAttribute("userProducts", user.getUserProducts());
                 forwardString = SHOW_PURCHASE;
             } catch (SQLException e) {
                 e.printStackTrace();

@@ -76,7 +76,5 @@
     </tbody>
 </table>
 <p><a href="ShowAll?action=addProduct">Add Product</a></p>
-<%--<br>--%>
-<%--<p><a href="ShowAll?action=purchase">Make Purchase</a></p>--%>
 </body>
 </html>

@@ -6,6 +6,7 @@ import java.util.*;
 /**
  * Created by FromxSoul on 17.05.2016.
  */
+@SuppressWarnings("ALL")
 @Entity
 @Table(name = "user_m2m")
 public class User {
@@ -21,13 +22,17 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "login", unique = true)
+    private String login;
+
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "shop_experience")
     private int shopExperience;
 
-    @ManyToMany
-    @JoinTable(name = "user_products", joinColumns = {@JoinColumn(name = "user_id")},
-            inverseJoinColumns = {@JoinColumn(name = "product_id")})
-    private List<Product> products = new ArrayList<Product>();
+    @OneToMany(mappedBy = "id.user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public User() {
 
@@ -57,6 +62,22 @@ public class User {
         this.lastName = lastName;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public int getShopExperience() {
         return shopExperience;
     }
@@ -65,11 +86,11 @@ public class User {
         this.shopExperience = shopExperience;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public List<UserProducts> getUserProducts() {
+        return userProducts;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setUserProducts(List<UserProducts> userProducts) {
+        this.userProducts = userProducts;
     }
 }

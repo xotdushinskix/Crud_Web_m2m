@@ -16,6 +16,7 @@
 
         <mapping class="table.User" />
         <mapping class="table.Product" />
+        <mapping class="table.UserProducts" />
 
     </session-factory>
 </hibernate-configuration>

@@ -6,6 +6,7 @@ import java.util.*;
 /**
  * Created by FromxSoul on 17.05.2016.
  */
+@SuppressWarnings("JpaAttributeTypeInspection")
 @Entity
 @Table(name = "product_m2m")
 public class Product {
@@ -27,8 +28,8 @@ public class Product {
     @Column(name = "product_mpn")
     private int productMPN;
 
-    @ManyToMany
-    private List<User> users = new ArrayList<User>();
+    @OneToMany(mappedBy = "id.product", fetch = FetchType.LAZY)
+    private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public Product() {
 
@@ -74,11 +75,11 @@ public class Product {
         this.productMPN = productMPN;
     }
 
-    public List<User> getUsers() {
-        return users;
+    public List<UserProducts> getUserProducts() {
+        return userProducts;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setUserProducts(List<UserProducts> userProducts) {
+        this.userProducts = userProducts;
     }
 }
