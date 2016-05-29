@@ -2,9 +2,11 @@ package controller;
 
 import dao.ProductDao;
 import dao.UserDao;
+import dao.UserProductsDao;
 import fabric.Fabric;
 import table.Product;
 import table.User;
+import table.UserProducts;
 import util.HibernateUtil;
 
 import javax.servlet.ServletException;
@@ -13,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nikita on 18.05.16.
@@ -29,8 +33,10 @@ public class ShowAll extends Forward {
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
+    private UserProductsDao userProductsDao = fabric.getUserProductsDao();
     private User user = new User();
     private Product product = new Product();
+    private UserProducts userProducts = new UserProducts();
 
 
     @Override
@@ -96,12 +102,50 @@ public class ShowAll extends Forward {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
         } else if (action.equals("watchUserPurchases")) {
-            int userId = Integer.parseInt(request.getParameter("userId"));
+            super.showRequireInfoAfterDeleteOrder(request);
+            forwardString = SHOW_PURCHASE;
+
+        } else if (action.equals("deletePurchQuantity")) {
+            int userProductsId = Integer.parseInt(request.getParameter("userProductsId"));
+
+            int boughtQuantityForDelete = 0;
+            try {
+                boughtQuantityForDelete = userProductsDao.getUserProducts(userProductsId).getBoughtQuantity();
+                int productIdForEdit = userProductsDao.getUserProducts(userProductsId).getProduct().getProductId();
+                product = productDao.getProduct(productIdForEdit);
+                int stock = product.getProductStock();
+                product.setProductStock(stock + boughtQuantityForDelete);
+                productDao.editProduct(product);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                userProducts = userProductsDao.getUserProducts(userProductsId);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            int userId = userProducts.getUser().getUserId();
+            int prodId = userProducts.getProduct().getProductId();
             try {
                 user = userDao.getUser(userId);
-                request.setAttribute("user", user);
-                request.setAttribute("userProducts", user.getUserProducts());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                product = productDao.getProduct(prodId);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            user.getUserProducts().clear();
+            product.getUserProducts().clear();
+            try {
+                userDao.editUser(user);
+                productDao.editProduct(product);
+                userProductsDao.deleteUserProducts(userProducts);
+                super.showRequireInfoAfterDeleteOrder(request);
                 forwardString = SHOW_PURCHASE;
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -110,5 +154,6 @@ public class ShowAll extends Forward {
 
         super.forward(forwardString, request, response);
     }
+
 }
 

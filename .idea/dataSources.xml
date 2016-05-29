@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="369509402">
-    <data-source source="LOCAL" name="MySQL - m2m@localhost" uuid="49b98b11-13fc-41c3-b2e2-20f9d7b9d3e8">
+  <component name="DataSourceManagerImpl" format="xml" hash="1702740789">
+    <data-source source="LOCAL" name="MySQL - m2m@localhost" uuid="901e4ec9-37c2-479c-a16c-3b32377926f3">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/m2m</jdbc-url>
       <driver-properties>
-        <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
         <property name="characterEncoding" value="utf8" />
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
+      <libraries />
     </data-source>
   </component>
 </project>

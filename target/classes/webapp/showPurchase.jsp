@@ -10,48 +10,35 @@
            uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title></title>
+    <title>Show purchase</title>
 </head>
 <body>
   <h3>User purchase:</h3>
-  <table border="2">
-    <thead>
-    <tr>
-      <th>User Id</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Shop Experience</th>
-      <th>Bought Products</th>
-    </tr>
-    </thead>
-    <tbody>
+    <table border="1">
+      <thead>
       <tr>
-        <td><c:out value="${user.userId}" /></td>
-        <td><c:out value="${user.firstName}" /></td>
-        <td><c:out value="${user.lastName}" /></td>
-        <td><c:out value="${user.shopExperience}" /></td>
-        <td>
-          <table border="1">
-            <thead>
-            <tr>
-              <th>Brand</th>
-              <th>Model</th>
-              <th>Quantity</th>
-            </tr>
-            </thead>
-            <tbody>
-              <c:forEach items="${userProducts}" var="productP">
-              <tr>
-                <td>${productP.product.productBrand}</td>
-                <td>${productP.product.productModel}</td>
-                <td>${productP.boughtQuantity}</td>
-              </tr>
-              </c:forEach>
-            </tbody>
-          </table>
-        </td>
+        <th>Order Id</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Quantity</th>
+        <th>Change Quantity</th>
+        <th>Delete Order</th>
       </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <c:forEach items="${userProductsesNew}" var="userProd">
+        <tr>
+          <td>${userProd.userProductsId}</td>
+          <td>${userProd.product.productBrand}</td>
+          <td>${userProd.product.productModel}</td>
+          <td>${userProd.boughtQuantity}</td>
+          <td><a href="ShowAll?action=updatePurchQuantity&userProductsId=${userProd.userProductsId}">Update</a></td>
+          <td><a href="ShowAll?action=deletePurchQuantity&userProductsId=${userProd.userProductsId}&userId=${userProd.user.userId}">Delete</a></td>
+        </tr>
+        </c:forEach>
+      </tbody>
+    </table>
+<br>
+  <td><a href="ShowAll?action=showAllUserAndProduct">Back To Main Page</a></td>
 </body>
 </html>

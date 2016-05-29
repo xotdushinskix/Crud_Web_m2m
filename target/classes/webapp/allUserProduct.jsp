@@ -26,23 +26,26 @@
         <th>Shop Experience</th>
         <th>Update</th>
         <th>Delete</th>
-        <th>Show purchases</th>
+        <th>Purchases</th>
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${users}" var="user1">
-        <tr>
-            <td>${user1.userId}</td>
-            <td>${user1.firstName}</td>
-            <td>${user1.lastName}</td>
-            <td>${user1.shopExperience}</td>
-            <td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>
-            <td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>
-            <td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Customer purchases</a></td>
-        </tr>
-    </c:forEach>
+        <c:forEach items="${users}" var="user1">
+            <tr>
+                <td>${user1.userId}</td>
+                <td>${user1.firstName}</td>
+                <td>${user1.lastName}</td>
+                <td>${user1.shopExperience}</td>
+                <td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>
+                <td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>
+                <td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Show</a></td>
+            </tr>
+        </c:forEach>
     </tbody>
 </table>
+
+
+
 <p><a href="ShowAll?action=addUser">Add User</a></p>
 <br>
 

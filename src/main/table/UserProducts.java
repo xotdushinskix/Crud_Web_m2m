@@ -1,30 +1,39 @@
 package table;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by nikita on 26.05.16.
  */
+@SuppressWarnings("JpaAttributeTypeInspection")
 @Entity
 @Table(name = "user_products")
-@AssociationOverrides({
-        @AssociationOverride(name = "id.user", joinColumns = @JoinColumn(name = "user_id")),
-        @AssociationOverride(name = "id.product", joinColumns = @JoinColumn(name = "product_id"))
-})
-public class UserProducts {
+public class UserProducts implements Serializable{
 
-    @EmbeddedId
-    private UserProductsPK id = new UserProductsPK();
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_product_id")
+    private int userProductsId;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 
     @Column(name = "bought_quantity")
     private int boughtQuantity;
 
-    public UserProductsPK getId() {
-        return id;
+
+    public int getUserProductsId() {
+        return userProductsId;
     }
 
-    public void setId(UserProductsPK id) {
-        this.id = id;
+    public void setUserProductsId(int userProductsId) {
+        this.userProductsId = userProductsId;
     }
 
     public int getBoughtQuantity() {
@@ -36,18 +45,18 @@ public class UserProducts {
     }
 
     public User getUser() {
-        return getId().getUser();
+        return user;
     }
 
     public void setUser(User user) {
-        getId().setUser(user);
+        this.user = user;
     }
 
     public Product getProduct() {
-        return getId().getProduct();
+        return product;
     }
 
     public void setProduct(Product product) {
-        getId().setProduct(product);
+        this.product = product;
     }
 }

@@ -2,6 +2,7 @@ package controller;
 
 import dao.ProductDao;
 import dao.UserDao;
+import dao.UserProductsDao;
 import fabric.Fabric;
 import table.Product;
 import table.User;
@@ -24,6 +25,8 @@ public class MakePurchase extends Forward {
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
+    private UserProductsDao userProductsDao = fabric.getUserProductsDao();
+    private UserProducts userProducts;
     private Product product;
     private User user;
 
@@ -44,7 +47,7 @@ public class MakePurchase extends Forward {
                 int stock = product.getProductStock() - productStock;
                 product.setProductStock(stock);
 
-                UserProducts userProducts = new UserProducts();
+                userProducts = new UserProducts();
                 userProducts.setBoughtQuantity(productStock);
                 userProducts.setProduct(product);
                 userProducts.setUser(user);
@@ -56,7 +59,13 @@ public class MakePurchase extends Forward {
                 productDao.editProduct(product);
 
                 super.requestAction(request);
+                request.setAttribute("userProducts", userProductsDao.getUserProducts(userProducts.getUserProductsId()));
                 forwardString = SHOW_ALL;
+
+//                userProducts = userProductsDao.getUserProducts(userProducts.getUserProductsId());
+//                userProducts.getUser().getUserId()
+//                userProducts.getUser().getUserId();
+
 
             } catch (SQLException e) {
                 e.printStackTrace();

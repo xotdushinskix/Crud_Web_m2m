@@ -2,29 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b4d466d-638b-4aba-9194-0e4626bfe05f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/table/UserProducts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/table/UserProductsPK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/dao/UserProductsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/dao_impl/UserProductsDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="DELETED" beforePath="D:\JavaSpring\Crud_Web_m2m\src\main\table\UserProductsPK.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaSpring\Crud_Web_m2m\target\classes\table\UserProductsPK.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaSpring\Crud_Web_m2m\target\classes\util\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaSpring\Crud_Web_m2m\target\com.crud_web_m2m\WEB-INF\classes\table\UserProductsPK.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaSpring\Crud_Web_m2m\target\com.crud_web_m2m\WEB-INF\classes\util\Main.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fabric/Fabric.class" afterPath="$PROJECT_DIR$/target/classes/fabric/Fabric.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/fabric/Fabric.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/fabric/Fabric.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controller/MakePurchase.class" afterPath="$PROJECT_DIR$/target/classes/controller/MakePurchase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controller/ShowAll.class" afterPath="$PROJECT_DIR$/target/classes/controller/ShowAll.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/controller/MakePurchase.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/controller/MakePurchase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/table/Product.class" afterPath="$PROJECT_DIR$/target/classes/table/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/Product.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controller/ShowAll.class" afterPath="$PROJECT_DIR$/target/classes/controller/ShowAll.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/controller/ShowAll.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/controller/ShowAll.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controller/MakePurchase.java" afterPath="$PROJECT_DIR$/src/main/controller/MakePurchase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controller/ShowAll.java" afterPath="$PROJECT_DIR$/src/main/controller/ShowAll.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/table/Product.java" afterPath="$PROJECT_DIR$/src/main/table/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/table/User.java" afterPath="$PROJECT_DIR$/src/main/table/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/table/User.class" afterPath="$PROJECT_DIR$/target/classes/table/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/User.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/table/UserProducts.class" afterPath="$PROJECT_DIR$/target/classes/table/UserProducts.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/UserProducts.class" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/table/UserProducts.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/fabric/Fabric.java" afterPath="$PROJECT_DIR$/src/main/fabric/Fabric.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controller/Forward.java" afterPath="$PROJECT_DIR$/src/main/controller/Forward.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/util/Main.java" afterPath="$PROJECT_DIR$/src/main/util/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controller/MakePurchase.java" afterPath="$PROJECT_DIR$/src/main/controller/MakePurchase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/table/Product.java" afterPath="$PROJECT_DIR$/src/main/table/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controller/ShowAll.java" afterPath="$PROJECT_DIR$/src/main/controller/ShowAll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/table/User.java" afterPath="$PROJECT_DIR$/src/main/table/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/table/UserProducts.java" afterPath="$PROJECT_DIR$/src/main/table/UserProducts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/showPurchase.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/webapp/allUserProduct.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/allUserProduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/showPurchase.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/allUserProduct.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/allUserProduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/showPurchase.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/allUserProduct.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/allUserProduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/allUserProduct.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/allUserProduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/showPurchase.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/showPurchase.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/showPurchase.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/showPurchase.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/showPurchase.jsp" afterPath="$PROJECT_DIR$/target/com.crud_web_m2m/WEB-INF/classes/webapp/showPurchase.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Crud_Web_m2m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,18 +65,21 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
     <PATH>
       <PATH_ELEMENT>
         <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="MySQL - m2m@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="m2m" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -64,91 +89,12 @@
     <favorites_list name="Crud_Web_m2m" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Forward.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controller/Forward.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="113" selection-start-line="27" selection-start-column="113" selection-end-line="27" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/table/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-              <folding>
-                <element signature="e#786#800#0" expanded="true" />
-                <element signature="e#1805#1806#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-                <element signature="e#1956#1957#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-              <folding>
-                <element signature="e#731#745#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-                <element signature="e#1822#1823#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="UserProducts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/table/UserProducts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="30" />
-              <folding>
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1142#1143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowAll.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controller/ShowAll.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,31 +102,55 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/table/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showPurchase.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/showPurchase.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.076923">
+              <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+              <folding>
+                <marker date="1464550667754" expanded="true" signature="2632:2693" placeholder="select user_..user_products..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showPurchase.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/showPurchase.jsp">
+      <file leaf-file-name="Forward.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/controller/Forward.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+              <folding>
+                <element signature="e#1779#1793#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MakePurchase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controller/MakePurchase.java">
+      <file leaf-file-name="ShowAll.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/controller/ShowAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state vertical-scroll-proportion="4.1311827">
+              <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,8 +161,30 @@
       <file leaf-file-name="allUserProduct.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="107" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="107" />
+            <state vertical-scroll-proportion="-26.153847">
+              <caret line="40" column="69" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakePurchase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/controller/MakePurchase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddEdit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/controller/AddEdit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -203,8 +195,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -221,8 +213,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/util/HibernateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/fabric/Fabric.java" />
-        <option value="$PROJECT_DIR$/src/main/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/allUserProduct.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -232,22 +222,29 @@
         <option value="$PROJECT_DIR$/src/main/webapp/editAndAddUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/editAndADDProduct.jsp" />
-        <option value="$PROJECT_DIR$/src/main/controller/AddEdit.java" />
-        <option value="$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/dao_impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/makePurchase.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp" />
+        <option value="$PROJECT_DIR$/src/main/dao/UsPrDao.java" />
+        <option value="$PROJECT_DIR$/src/main/dao_impl/UsPrDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/table/User.java" />
+        <option value="$PROJECT_DIR$/src/main/table/Product.java" />
         <option value="$PROJECT_DIR$/src/main/table/UserProductsPK.java" />
         <option value="$PROJECT_DIR$/src/main/table/UserProducts.java" />
-        <option value="$PROJECT_DIR$/src/main/table/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/table/User.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/MakePurchase.java" />
+        <option value="$PROJECT_DIR$/src/main/fabric/Fabric.java" />
+        <option value="$PROJECT_DIR$/src/main/dao_impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/controller/AddEdit.java" />
+        <option value="$PROJECT_DIR$/src/main/dao/UserProductsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/dao_impl/UserProductsDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/controller/Forward.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/ShowAll.java" />
+        <option value="$PROJECT_DIR$/src/main/controller/MakePurchase.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp" />
         <option value="$PROJECT_DIR$/src/main/util/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/controller/ShowPurchase.java" />
+        <option value="$PROJECT_DIR$/src/main/controller/Forward.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/showPurchase.jsp" />
+        <option value="$PROJECT_DIR$/src/main/controller/ShowAll.java" />
       </list>
     </option>
   </component>
@@ -275,11 +272,14 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="25" />
-    <option name="width" value="1922" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -302,10 +302,9 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,32 +342,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Crud_Web_m2m" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Crud_Web_m2m" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,7 +501,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -541,6 +513,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/JavaSpring/Crud_Web_m2m/src/main/fabric/Fabric.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RegistrationCheckWeb" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -659,6 +633,47 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -679,65 +694,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -825,12 +781,13 @@
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="false" />
       <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -854,74 +811,12 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Crud_Web_m2m" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -966,55 +861,13 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <list size="2">
@@ -1028,9 +881,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1039,7 +890,6 @@
       <changelist id="2b4d466d-638b-4aba-9194-0e4626bfe05f" name="Default" comment="" />
       <created>1463508533061</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
       <updated>1463508533061</updated>
       <workItem from="1463508536243" duration="5006000" />
       <workItem from="1463553513792" duration="24015000" />
@@ -1050,72 +900,77 @@
       <workItem from="1463989280779" duration="16609000" />
       <workItem from="1464174840684" duration="2480000" />
       <workItem from="1464255536895" duration="12411000" />
+      <workItem from="1464286889428" duration="12243000" />
+      <workItem from="1464379846119" duration="38000" />
+      <workItem from="1464462166428" duration="7632000" />
+      <workItem from="1464470023572" duration="31922000" />
+      <workItem from="1464550657163" duration="3799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108582000" />
+    <option name="totallyTimeSpent" value="164216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32550693" sideWeight="0.47429305" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31543624" sideWeight="0.52827764" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3276414" sideWeight="0.47172236" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20394036" sideWeight="0.49355432" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20649351" sideWeight="0.50644565" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08785942" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32080537" sideWeight="0.46401027" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24697986" sideWeight="0.5411311" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33825505" sideWeight="0.4588689" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20372751" sideWeight="0.51195216" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19215938" sideWeight="0.4880478" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20649351" sideWeight="0.50644565" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06426735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31543624" sideWeight="0.52827764" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.088046275" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32550693" sideWeight="0.47429305" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5026681" sideWeight="0.47172236" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20394036" sideWeight="0.49355432" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20649351" sideWeight="0.50644565" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31543624" sideWeight="0.52827764" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.087403595" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32348993" sideWeight="0.47429305" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24697986" sideWeight="0.47172236" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20372751" sideWeight="0.51195216" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20372751" sideWeight="0.4880478" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20649351" sideWeight="0.50644565" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1131,7 +986,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/controller/ShowAll.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1142,38 +1005,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/controller/ShowAll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#731#745#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndADDProduct.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="94" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -1181,35 +1037,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/table/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#786#800#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndAddUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="56" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding />
         </state>
@@ -1217,35 +1067,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/table/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#786#800#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
-            <element signature="e#731#745#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding />
         </state>
@@ -1253,45 +1093,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao_impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/fabric/Fabric.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1299,7 +1136,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/db036b1c-644a-4037-9790-d759bd3a5700/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
@@ -1307,281 +1144,250 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4bc24a6-c204-40d7-a0fc-584931e4de29/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2dea0e2d-a37d-4c36-8ef0-ac45ab18c508/console.sql" />
-    <entry file="dbDummy://dbtable:/6b8edea3/2dea0e2d-a37d-4c36-8ef0-ac45ab18c508/m2m..product_m2m" />
-    <entry file="dbDummy://dbtable:/6b8edea3/2dea0e2d-a37d-4c36-8ef0-ac45ab18c508/m2m..user_m2m" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.6.Final/hibernate-core-5.0.6.Final.jar!/org/hibernate/Session.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
+        <state vertical-scroll-proportion="0.0">
           <caret line="68" column="17" selection-start-line="11" selection-start-column="4" selection-end-line="68" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/fabric/Fabric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndADDProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="26" column="63" selection-start-line="16" selection-start-column="4" selection-end-line="26" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndAddUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/901e4ec9-37c2-479c-a16c-3b32377926f3/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndADDProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/editAndAddUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/makePurchase.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="66" />
-          <folding />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controller/AddEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e75013e2/2dea0e2d-a37d-4c36-8ef0-ac45ab18c508/m2m.user_products">
+    <entry file="dbDummy://dbtable:/6b8edea3/901e4ec9-37c2-479c-a16c-3b32377926f3/m2m..product_m2m">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/6b8edea3/901e4ec9-37c2-479c-a16c-3b32377926f3/m2m..product_m2m_user_products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/fabric/Fabric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao_impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/table/UserProductsPK.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49b98b11-13fc-41c3-b2e2-20f9d7b9d3e8/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e75013e2/49b98b11-13fc-41c3-b2e2-20f9d7b9d3e8/m2m.user_m2m">
+    <entry file="file://$PROJECT_DIR$/src/main/dao/UserProductsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/6b8edea3/901e4ec9-37c2-479c-a16c-3b32377926f3/m2m..user_products">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dao_impl/ProductDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/util/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controller/Forward.java">
+    <entry file="file://$PROJECT_DIR$/src/main/dao_impl/UserProductsDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="113" selection-start-line="27" selection-start-column="113" selection-end-line="27" selection-end-column="113" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/table/UserProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controller/AddEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/table/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-          <folding>
-            <element signature="e#786#800#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/table/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="e#731#745#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/table/UserProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controller/ShowAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e75013e2/49b98b11-13fc-41c3-b2e2-20f9d7b9d3e8/m2m.user_products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="107" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controller/MakePurchase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+          <folding>
+            <marker date="1464550667754" expanded="true" signature="2632:2693" placeholder="select user_..user_products..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controller/MakePurchase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/allUserProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.153847">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/showPurchase.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state vertical-scroll-proportion="-7.076923">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controller/Forward.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <folding>
+            <element signature="e#1779#1793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controller/ShowAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.1311827">
+          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

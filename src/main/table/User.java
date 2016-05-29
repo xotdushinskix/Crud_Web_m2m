@@ -31,7 +31,7 @@ public class User {
     @Column(name = "shop_experience")
     private int shopExperience;
 
-    @OneToMany(mappedBy = "id.user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL)
     private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public User() {

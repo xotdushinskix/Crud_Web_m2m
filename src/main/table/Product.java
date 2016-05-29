@@ -25,10 +25,10 @@ public class Product {
     @Column(name = "stock")
     private int productStock;
 
-    @Column(name = "product_mpn")
+    @Column(name = "product_mpn", unique = true)
     private int productMPN;
 
-    @OneToMany(mappedBy = "id.product", fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY)
     private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public Product() {
