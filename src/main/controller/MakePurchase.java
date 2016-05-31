@@ -62,11 +62,6 @@ public class MakePurchase extends Forward {
                 request.setAttribute("userProducts", userProductsDao.getUserProducts(userProducts.getUserProductsId()));
                 forwardString = SHOW_ALL;
 
-//                userProducts = userProductsDao.getUserProducts(userProducts.getUserProductsId());
-//                userProducts.getUser().getUserId()
-//                userProducts.getUser().getUserId();
-
-
             } catch (SQLException e) {
                 e.printStackTrace();
             }

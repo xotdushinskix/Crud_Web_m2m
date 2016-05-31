@@ -26,5 +26,6 @@
     <br/>
     <input type="submit" value="Submit" name="addEditProduct"/>
 </form>
+<td><a href="ShowAll?action=showAllUserAndProduct">Back To Main Page</a></td>
 </body>
 </html>

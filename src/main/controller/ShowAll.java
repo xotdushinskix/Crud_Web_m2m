@@ -30,6 +30,7 @@ public class ShowAll extends Forward {
     private static String ADD_EDIT_PRODUCT_PAGE = "/editAndADDProduct.jsp";
     private static String MAKE_PURCHASE = "/makePurchase.jsp";
     private static String SHOW_PURCHASE = "/showPurchase.jsp";
+    private static String CHANGE_ORDER = "/changeProdQuantityInOrder.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
@@ -150,6 +151,20 @@ public class ShowAll extends Forward {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+        } else if(action.equals("updatePurchQuantity")) {
+            int userProductsId = Integer.parseInt(request.getParameter("userProductsId"));
+            try {
+                int productIdForEditQuantity = userProductsDao.getUserProducts(userProductsId).getProduct().getProductId();
+                product = productDao.getProduct(productIdForEditQuantity);
+                int prodQuantityInOrderBeforeEdit = userProductsDao.getUserProducts(userProductsId).getBoughtQuantity();
+                request.setAttribute("product", product);
+                request.setAttribute("prodQuantityInOrderBeforeEdit", prodQuantityInOrderBeforeEdit);
+                request.setAttribute("userId", userProductsDao.getUserProducts(userProductsId).getUser().getUserId());
+                request.setAttribute("userProductsId", userProductsId);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            forwardString = CHANGE_ORDER;
         }
 
         super.forward(forwardString, request, response);

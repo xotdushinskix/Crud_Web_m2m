@@ -31,6 +31,7 @@
     <br/>
     <input type="submit" value="Make Purchase!" name="makePurchase"/>
   </form>
-
+  <br>
+  <td><a href="ShowAll?action=showAllUserAndProduct">Back To Main Page</a></td>
 </body>
 </html>
