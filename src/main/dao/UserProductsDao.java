@@ -1,5 +1,7 @@
 package dao;
 
+import table.Product;
+import table.User;
 import table.UserProducts;
 
 import java.sql.SQLException;
@@ -14,5 +16,6 @@ public interface UserProductsDao {
     void editUserProducts(UserProducts userProducts) throws SQLException;
     void deleteUserProducts(UserProducts userProducts) throws SQLException;
     List<UserProducts> getAllUserProducts() throws SQLException;
+    UserProducts getUsProdByUserAndProds(User user, Product product) throws SQLException;
 
 }
