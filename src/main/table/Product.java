@@ -28,7 +28,7 @@ public class Product {
     @Column(name = "product_mpn", unique = true)
     private int productMPN;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "product",fetch = FetchType.LAZY)
     private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public Product() {

@@ -31,7 +31,7 @@ public class User {
     @Column(name = "shop_experience")
     private int shopExperience;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     private List<UserProducts> userProducts = new ArrayList<UserProducts>();
 
     public User() {

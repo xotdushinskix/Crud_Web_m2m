@@ -36,30 +36,30 @@ public class Forward extends HttpServlet {
     }
 
 
-    protected void showRequireInfoAfterDeleteOrder(HttpServletRequest request) throws ServletException {
-        int userId = Integer.parseInt(request.getParameter("userId"));
-        List<UserProducts> userProductsesAll = null;
-        try {
-            userProductsesAll = userProductsDao.getAllUserProducts();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        List<UserProducts> userProductsesNew = new ArrayList<UserProducts>();
-        for (UserProducts userProducts : userProductsesAll) {
-            int userIdInUserProductsList = userProducts.getUser().getUserId();
-            if (userId == userIdInUserProductsList) {
-                int userProdID = userProducts.getUserProductsId();
-                UserProducts userProducts1 = null;
-                try {
-                    userProducts1 = userProductsDao.getUserProducts(userProdID);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                userProductsesNew.add(userProducts1);
-            }
-        }
-        request.setAttribute("userProductsesNew", userProductsesNew);
-    }
+//    protected void showRequireInfoAfterDeleteOrder(HttpServletRequest request) throws ServletException {
+//        int userId = Integer.parseInt(request.getParameter("userId"));
+//        List<UserProducts> userProductsesAll = null;
+//        try {
+//            userProductsesAll = userProductsDao.getAllUserProducts();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        List<UserProducts> userProductsesNew = new ArrayList<UserProducts>();
+//        for (UserProducts userProducts : userProductsesAll) {
+//            int userIdInUserProductsList = userProducts.getUser().getUserId();
+//            if (userId == userIdInUserProductsList) {
+//                int userProdID = userProducts.getUserProductsId();
+//                UserProducts userProducts1 = null;
+//                try {
+//                    userProducts1 = userProductsDao.getUserProducts(userProdID);
+//                } catch (SQLException e) {
+//                    e.printStackTrace();
+//                }
+//                userProductsesNew.add(userProducts1);
+//            }
+//        }
+//        request.setAttribute("userProductsesNew", userProductsesNew);
+//    }
 
 
 
