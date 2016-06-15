@@ -4,6 +4,8 @@ import dao.ProductDao;
 import dao.UserDao;
 import dao.UserProductsDao;
 import fabric.Fabric;
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Restrictions;
 import table.Product;
 import table.User;
 import table.UserProducts;
@@ -15,7 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -105,7 +106,19 @@ public class ShowAll extends Forward {
             }
 
         } else if (action.equals("watchUserPurchases")) {
-            super.showRequireInfoAfterDeleteOrder(request);
+            int userId = Integer.parseInt(request.getParameter("userId"));
+            try {
+                user = userDao.getUser(userId);
+                Criteria criteria = HibernateUtil.getSessionFactory().openSession().createCriteria(UserProducts.class)
+                        .add(Restrictions.eq("user.userId", userId))
+                        .add(Restrictions.isNull("order.orderId"));
+                List<UserProducts>userProducts = criteria.list();
+                request.setAttribute("userProductsesNew", userProducts);
+                request.setAttribute("userId", userId);
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
             forwardString = SHOW_PURCHASE;
 
         } else if (action.equals("deletePurchQuantity")) {
@@ -146,7 +159,8 @@ public class ShowAll extends Forward {
                 userDao.editUser(user);
                 productDao.editProduct(product);
                 userProductsDao.deleteUserProducts(userProducts);
-                super.showRequireInfoAfterDeleteOrder(request);
+                List<UserProducts>userProducts = userProductsDao.getAllUsProdByRequiredUserId(user);
+                request.setAttribute("userProductsesNew", userProducts);
                 forwardString = SHOW_PURCHASE;
             } catch (SQLException e) {
                 e.printStackTrace();

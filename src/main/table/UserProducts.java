@@ -27,6 +27,10 @@ public class UserProducts implements Serializable{
     @Column(name = "bought_quantity")
     private int boughtQuantity;
 
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
 
     public int getUserProductsId() {
         return userProductsId;
@@ -58,5 +62,13 @@ public class UserProducts implements Serializable{
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }

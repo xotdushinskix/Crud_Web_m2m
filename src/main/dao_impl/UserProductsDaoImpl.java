@@ -3,7 +3,6 @@ package dao_impl;
 import dao.UserProductsDao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
-import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 import table.Product;
 import table.User;
@@ -89,6 +88,8 @@ public class UserProductsDaoImpl implements UserProductsDao {
         return userProducts;
     }
 
+
+
     public UserProducts getUsProdByUserAndProds(User user, Product product) throws SQLException {
         Session session = null;
         UserProducts userProduct = null;
@@ -101,9 +102,32 @@ public class UserProductsDaoImpl implements UserProductsDao {
             userProduct = (UserProducts) criteria.uniqueResult();
         } catch (Exception e) {
             e.printStackTrace();
-        } if ((session != null) && (session.isOpen())) {
-            session.close();
+        } finally {
+            if ((session != null) && (session.isOpen())) {
+                session.close();
+            }
         }
         return userProduct;
+    }
+
+
+
+    public List<UserProducts> getAllUsProdByRequiredUserId(User user) throws SQLException {
+        List<UserProducts>userProducts = null;
+        Session session = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            session.beginTransaction();
+            Criteria criteria = session.createCriteria(UserProducts.class)
+                    .add(Restrictions.like("user", user));
+            userProducts = criteria.list();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if ((session != null) && (session.isOpen())) {
+                session.close();
+            }
+        }
+        return userProducts;
     }
 }

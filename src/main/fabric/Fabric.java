@@ -1,8 +1,10 @@
 package fabric;
 
+import dao.OrderDao;
 import dao.ProductDao;
 import dao.UserDao;
 import dao.UserProductsDao;
+import dao_impl.OrderDaoImpl;
 import dao_impl.ProductDaoImpl;
 import dao_impl.UserDaoImpl;
 import dao_impl.UserProductsDaoImpl;
@@ -15,6 +17,7 @@ public class Fabric {
     private static UserDao userDao = null;
     private static ProductDao productDao = null;
     private static UserProductsDao userProductsDao = null;
+    private static OrderDao orderDao = null;
     private static Fabric instance = null;
 
     public static synchronized Fabric getInstance() {
@@ -46,6 +49,14 @@ public class Fabric {
             userProductsDao = new UserProductsDaoImpl();
         }
         return userProductsDao;
+    }
+
+
+    public static synchronized OrderDao getOrderDao() {
+        if (orderDao == null) {
+            orderDao = new OrderDaoImpl();
+        }
+        return orderDao;
     }
 
 }

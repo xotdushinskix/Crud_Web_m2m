@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Crud_Web_m2m:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="com.crud_web_m2m.war">
-      <element id="artifact" artifact-name="Crud_Web_m2m:war exploded" />
-    </root>
-  </artifact>
-</component>
