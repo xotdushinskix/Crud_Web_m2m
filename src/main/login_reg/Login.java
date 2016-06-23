@@ -16,14 +16,14 @@ import java.sql.SQLException;
 /**
  * Created by nikita on 23.06.16.
  */
-@WebServlet("/login")
+@WebServlet("/products/login_error")
 public class Login extends Forward {
 
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private User user;
-    private String LOGIN_PAGE = "/login.jsp";
-    private String LOGOUT_PAGE = "logout.html";
+    private String LOGIN_PAGE = "/allUserProduct.jsp"; //"/login.jsp";
+    private String LOGOUT_PAGE = "/logout.html";
     
     
 
@@ -37,8 +37,12 @@ public class Login extends Forward {
         if (userLogin.length() == 0 & userPassword.length() == 0) {
             message = "Login and password fields cannot be empty";
             request.setAttribute("message", message);
+            try {
+                super.requestAction(request);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
             super.forward(LOGIN_PAGE, request, response);
-            return;
         }
 
 
@@ -46,11 +50,21 @@ public class Login extends Forward {
         if (userLogin.length() == 0) {
             message = "Login can not be empty";
             request.setAttribute("message", message);
+            try {
+                super.requestAction(request);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
             super.forward(LOGIN_PAGE, request, response);
         } else {
             if (userPassword.length() == 0) {
                 message = "Password can not be empty";
                 request.setAttribute("message", message);
+                try {
+                    super.requestAction(request);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
                 super.forward(LOGIN_PAGE, request, response);
 
             } else {
@@ -63,6 +77,12 @@ public class Login extends Forward {
                     e.printStackTrace();
                     message = "This customer doesn't register, login is invalid";
                     request.setAttribute("message", message);
+                    try {
+                        super.requestAction(request);
+                    } catch (SQLException o) {
+                        o.printStackTrace();
+                    }
+
                     super.forward(LOGIN_PAGE, request, response);
                 }
 
@@ -71,20 +91,19 @@ public class Login extends Forward {
                     if (customerPassword.equals(userPassword)) {
                         HttpSession session = request.getSession();
                         session.setAttribute("userLogin", userLogin);
-                        session.setAttribute("userLogin", userLogin); //запихнуть сюда имя
                         userLogin = session.getAttribute("userLogin").toString();
                         user = userDao.getUserByLogin(userLogin);
-                        //String userName = userDao.getUserByLogin(userLogin).getFirstName();
-                        //request.setAttribute("userName", userName);
-
-
-                        //super.requestAction(request);
-                        //super.forward("/allUserProduct.jsp", request, response);
+                        session.setAttribute("userName", user.getFirstName());
                         response.sendRedirect("/products");
 
                     } else {
                         message = "Your password is invalid";
                         request.setAttribute("message", message);
+                        try {
+                            super.requestAction(request);
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
                         super.forward(LOGIN_PAGE, request, response);
                     }
 
@@ -96,6 +115,15 @@ public class Login extends Forward {
 
             }
         }
+
+
+        try {
+            super.requestAction(request);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 

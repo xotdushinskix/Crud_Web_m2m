@@ -11,12 +11,12 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form action="login" method="post" style="position: fixed; top: 40%; left: 40%">
+    <form action="/products/login_error" method="post" style="position: fixed; top: 8%; left: 82%">
         Login: <input type="text" name="login"><br> </br>
         Password: <input type="password" name="password"><br> </br>
         <input type="submit" value="Enter"><br> </br>
     </form>
 <br>
-    <p style="position: fixed; top: 50%; left: 40%; color: firebrick;">${message}</p>
+    <p style="position: fixed; top: 20%; left: 80%; color: firebrick;">${message}</p>
 </body>
 </html>

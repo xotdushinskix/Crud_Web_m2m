@@ -79,11 +79,12 @@
     </tbody>
 </table>
 
-<c:if test="${sessionScope.userLogin == null}" > <a href="/login" style="position: absolute; top: 2%; right: 2%;">Login</a> </c:if>
+<%--<c:if test="${sessionScope.userLogin == null}" > <a href="/login" style="position: absolute; top: 2%; right: 2%;">Login</a> </c:if>--%>
 <c:if test="${sessionScope.userLogin != null}" > <jsp:include page="logout.html" /> </c:if>
 
-<p style="position: absolute; top: 2%; right: 6%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
-<p style="position: absolute; top: 5%; right: 6%;"> <c:if test="${sessionScope.userLogin != null}" > Hello, <c:out value="${userName}"/></c:if></p>
+<p style="position: absolute; top: 2%; right: 8%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
+<p><c:if test="${sessionScope.userLogin == null}" > <%@include file="/login.jsp" %> </c:if></p>
+<p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello, <c:out value="${sessionScope.userName}"/></c:if></p>
 
 </body>
 </html>
