@@ -16,38 +16,38 @@
 <h3>Information and action</h3>
 
 
-<h3>All users list:</h3>
-<table border="2">
-    <thead>
-    <tr>
-        <th>User Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Shop Experience</th>
-        <th>Update</th>
-        <th>Delete</th>
-        <th>Purchases</th>
-    </tr>
-    </thead>
-    <tbody>
-        <c:forEach items="${users}" var="user1">
-            <tr>
-                <td>${user1.userId}</td>
-                <td>${user1.firstName}</td>
-                <td>${user1.lastName}</td>
-                <td>${user1.shopExperience}</td>
-                <td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>
-                <td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>
-                <td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Show</a></td>
-            </tr>
-        </c:forEach>
-    </tbody>
-</table>
+<%--<h3>All users list:</h3>--%>
+<%--<table border="2">--%>
+    <%--<thead>--%>
+    <%--<tr>--%>
+        <%--<th>User Id</th>--%>
+        <%--<th>First Name</th>--%>
+        <%--<th>Last Name</th>--%>
+        <%--<th>Shop Experience</th>--%>
+        <%--<th>Update</th>--%>
+        <%--<th>Delete</th>--%>
+        <%--<th>Purchases</th>--%>
+    <%--</tr>--%>
+    <%--</thead>--%>
+    <%--<tbody>--%>
+        <%--<c:forEach items="${users}" var="user1">--%>
+            <%--<tr>--%>
+                <%--<td>${user1.userId}</td>--%>
+                <%--<td>${user1.firstName}</td>--%>
+                <%--<td>${user1.lastName}</td>--%>
+                <%--<td>${user1.shopExperience}</td>--%>
+                <%--<td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>--%>
+                <%--<td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>--%>
+                <%--<td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Show</a></td>--%>
+            <%--</tr>--%>
+        <%--</c:forEach>--%>
+    <%--</tbody>--%>
+<%--</table>--%>
 
 
 
-<p><a href="ShowAll?action=addUser">Add User</a></p>
-<br>
+<%--<p><a href="ShowAll?action=addUser">Add User</a></p>--%>
+<%--<br>--%>
 
 <h3>All products list:</h3>
 <table border="2">
@@ -58,8 +58,8 @@
         <th>Model</th>
         <th>Stock</th>
         <th>MPN</th>
-        <th>Update</th>
-        <th>Delete</th>
+        <%--<th>Update</th>--%>
+        <%--<th>Delete</th>--%>
         <th>Add to cart</th>
     </tr>
     </thead>
@@ -71,13 +71,19 @@
             <td>${product1.productModel}</td>
             <td>${product1.productStock}</td>
             <td>${product1.productMPN}</td>
-            <td><a href="ShowAll?action=updateProduct&productId=<c:out value="${product1.productId}"/>">Update</a></td>
-            <td><a href="ShowAll?action=deleteProduct&productId=<c:out value="${product1.productId}"/>">Delete</a></td>
+            <%--<td><a href="ShowAll?action=updateProduct&productId=<c:out value="${product1.productId}"/>">Update</a></td>--%>
+            <%--<td><a href="ShowAll?action=deleteProduct&productId=<c:out value="${product1.productId}"/>">Delete</a></td>--%>
             <td><a href="ShowAll?action=purchase&productId=<c:out value="${product1.productId}"/>">To cart</a></td>
         </tr>
     </c:forEach>
     </tbody>
 </table>
-<p><a href="ShowAll?action=addProduct">Add Product</a></p>
+
+<c:if test="${sessionScope.userLogin == null}" > <a href="/login" style="position: absolute; top: 2%; right: 2%;">Login</a> </c:if>
+<c:if test="${sessionScope.userLogin != null}" > <jsp:include page="logout.html" /> </c:if>
+
+<p style="position: absolute; top: 2%; right: 6%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
+<p style="position: absolute; top: 5%; right: 6%;"> <c:if test="${sessionScope.userLogin != null}" > Hello, <c:out value="${userName}"/></c:if></p>
+
 </body>
 </html>

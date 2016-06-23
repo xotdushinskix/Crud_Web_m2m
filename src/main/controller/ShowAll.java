@@ -46,56 +46,56 @@ public class ShowAll extends Forward {
         HibernateUtil.getSessionFactory();
         String forwardString = null;
         String action = request.getParameter("action");
-        if (action.equals("showAllUserAndProduct")) {
-            try {
-                super.requestAction(request);
-                forwardString = SHOW_ALL;
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } else if (action.equals("updateUser")) {
-            int userId = Integer.parseInt(request.getParameter("userId"));
-            try {
-                user = userDao.getUser(userId);
-                request.setAttribute("user", user);
-                forwardString = ADD_EDIT_USER_PAGE;
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } else if (action.equals("deleteUser")) {
-            int userId = Integer.parseInt(request.getParameter("userId"));
-            try {
-                userDao.deleteUser(userDao.getUser(userId));
-                super.requestAction(request);
-                forwardString = SHOW_ALL;
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } else if (action.equals("addUser")) {
-
-            forwardString = ADD_EDIT_USER_PAGE; //if add new user
-
-        } else if (action.equals("updateProduct")) {
-            int productId = Integer.parseInt(request.getParameter("productId"));
-            try {
-                product = productDao.getProduct(productId);
-                request.setAttribute("product", product);
-                forwardString = ADD_EDIT_PRODUCT_PAGE;
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } else if (action.equals("deleteProduct")) {
-            int productId = Integer.parseInt(request.getParameter("productId"));
-            try {
-                productDao.deleteProduct(productDao.getProduct(productId));
-                super.requestAction(request);
-                forwardString = SHOW_ALL;
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } else if (action.equals("addProduct")) {
-            forwardString = ADD_EDIT_PRODUCT_PAGE;
-        } else if (action.equals("purchase")){
+//        if (action.equals("showAllUserAndProduct")) {
+//            try {
+//                super.requestAction(request);
+//                forwardString = SHOW_ALL;
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else if (action.equals("updateUser")) {
+//            int userId = Integer.parseInt(request.getParameter("userId"));
+//            try {
+//                user = userDao.getUser(userId);
+//                request.setAttribute("user", user);
+//                forwardString = ADD_EDIT_USER_PAGE;
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else if (action.equals("deleteUser")) {
+//            int userId = Integer.parseInt(request.getParameter("userId"));
+//            try {
+//                userDao.deleteUser(userDao.getUser(userId));
+//                super.requestAction(request);
+//                forwardString = SHOW_ALL;
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else if (action.equals("addUser")) {
+//
+//            forwardString = ADD_EDIT_USER_PAGE; //if add new user
+//
+//        } else if (action.equals("updateProduct")) {
+//            int productId = Integer.parseInt(request.getParameter("productId"));
+//            try {
+//                product = productDao.getProduct(productId);
+//                request.setAttribute("product", product);
+//                forwardString = ADD_EDIT_PRODUCT_PAGE;
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else if (action.equals("deleteProduct")) {
+//            int productId = Integer.parseInt(request.getParameter("productId"));
+//            try {
+//                productDao.deleteProduct(productDao.getProduct(productId));
+//                super.requestAction(request);
+//                forwardString = SHOW_ALL;
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else if (action.equals("addProduct")) {
+//            forwardString = ADD_EDIT_PRODUCT_PAGE;
+        /*} else*/ if (action.equals("purchase")){
             int productId = Integer.parseInt(request.getParameter("productId"));
             try {
                 product = productDao.getProduct(productId);

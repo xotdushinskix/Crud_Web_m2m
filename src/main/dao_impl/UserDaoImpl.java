@@ -3,6 +3,7 @@ package dao_impl;
 import dao.UserDao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 import table.User;
 import util.HibernateUtil;
 
@@ -122,6 +123,27 @@ public class UserDaoImpl implements UserDao {
             }
         }
         return result;
+    }
+
+
+
+    public User getUserByLogin(String login) throws SQLException {
+        User user = null;
+        Session session = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            session.beginTransaction();
+            Criteria criteria = session.createCriteria(User.class)
+                    .add(Restrictions.like("login", login));
+            user = (User) criteria.uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if ((session != null) && (session.isOpen())) {
+                session.close();
+            }
+        }
+        return user;
     }
 
 

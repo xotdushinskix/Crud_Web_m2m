@@ -30,7 +30,7 @@ public class Main {
         Fabric fabric = Fabric.getInstance();
         UserDao userDao = fabric.getUserDao();
         ProductDao productDao = fabric.getProductDao();
-        UserProductsDao userProductsDao = fabric.getUserProductsDao();
+//        UserProductsDao userProductsDao = fabric.getUserProductsDao();
 //
 //        User user = userDao.getUser(4);
 ////        Product product = productDao.getProduct(8);

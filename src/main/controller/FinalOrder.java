@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,6 +36,9 @@ public class FinalOrder extends Forward{
         UserProductsDao userProductsDao = fabric.getUserProductsDao();
         OrderDao orderDao = fabric.getOrderDao();
 
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+
         int userId = Integer.parseInt(request.getParameter("userId"));
         try {
             Criteria criteria = HibernateUtil.getSessionFactory().openSession().createCriteria(UserProducts.class)
@@ -41,6 +47,8 @@ public class FinalOrder extends Forward{
             List<UserProducts>userProducts = criteria.list();
             order = new Order();
             order.setUserProducts(userProducts);
+            order.setShipStatus(false);
+            order.setCurrentData(dateFormat.format(date));
             orderDao.addOrder(order);
             for (UserProducts userProducts1 : userProducts) {
                 userProducts1.setOrder(order);

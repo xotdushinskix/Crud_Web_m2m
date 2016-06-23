@@ -16,6 +16,6 @@
   <h3>Order:</h3>
   Thanks for purchase! Your order id is : <c:out value="${orderId}"/>
   <br>
-  <td><a href="ShowAll?action=showAllUserAndProduct">Back To Main Page</a></td>
+  <td><a href="products_and_users">Back To Main Page</a></td>
 </body>
 </html>

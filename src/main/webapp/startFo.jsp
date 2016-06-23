@@ -3,8 +3,8 @@
 <html>
 <body>
 
-<jsp:forward page="/ShowAll?action=showAllUserAndProduct" />
-
+<%--<jsp:forward page="/products_and_users" />--%>
+<c:redirect url="/products"/>
 </body>
 </html>
 

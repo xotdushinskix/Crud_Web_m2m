@@ -96,8 +96,7 @@ public class AddEdit extends Forward {
                 e.printStackTrace();
             }
         }
-
-
-        super.forward(SHOW_ALL, request, response);
+        //super.forward(SHOW_ALL, request, response);
+        response.sendRedirect("/products_and_users");
     }
 }
