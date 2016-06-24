@@ -18,17 +18,19 @@
                     <input type="submit" value="Change" name="newFN"> <br>
                   </form> <br>
      <p style="position: absolute; top: 6%; left: 0.5%; color: firebrick"><c:out value="${message}"/></p>
-     <p style="position: absolute; top: 6%; left: 0.5%; color: firebrick"><c:out value="${messageEFN}"/></p>
+     <p style="position: absolute; top: 6%; left: 0.5%; color: firebrick"><c:out value="${messageEmpty}"/></p>
     Last Name:  <form action="/user_edit" method="post">
                     <input type="text" name="newLastName" value="<c:out value="${secondName}"/>"> <br>
                     <input type="submit" value="Change" name="newLN"> <br>
                 </form> <br>
     <p style="position: absolute; top: 16%; left: 0.5%; color: firebrick"><c:out value="${message1}"/></p>
+    <p style="position: absolute; top: 16%; left: 0.5%; color: firebrick"><c:out value="${messageEmptyL}"/></p>
     Shop Experience:  <form action="/user_edit" method="post">
                           <input type="text" name="newShopExperience" value="<c:out value="${userShopExperience}"/>"> <br>
                           <input type="submit" value="Change" name="newSE"> <br>
                         </form> <br>
     <p style="position: absolute; top: 26%; left: 0.5%; color: firebrick"><c:out value="${message2}"/></p>
+    <p style="position: absolute; top: 26%; left: 0.5%; color: firebrick"><c:out value="${messageSEE}"/></p>
      <form action="/user_edit" method="post">
          Enter your current password: <input type="password" name="currentPassword"> <br>
          Enter new password: <input type="password" name="newPassword"> <br>
