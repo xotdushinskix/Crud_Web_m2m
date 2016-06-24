@@ -24,7 +24,7 @@ import java.util.List;
 public class Forward extends HttpServlet {
     private Fabric fabric = Fabric.getInstance();
     private ProductDao productDao = fabric.getProductDao();
-    private UserDao userDao = fabric.getUserDao();
+    private User user;
 
     protected void forward(String to, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher(to);
@@ -34,6 +34,14 @@ public class Forward extends HttpServlet {
 
     protected void requestAction(HttpServletRequest request) throws ServletException, IOException, SQLException {
         request.setAttribute("products", productDao.getAllProducts());
+    }
+
+    protected void userAttribute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("firstName", user.getFirstName());
+        request.setAttribute("secondName", user.getLastName());
+        request.setAttribute("userShopExperience", user.getShopExperience());
+        request.setAttribute("userPassword", user.getPassword());
+        forward("/userPage.jsp", request, response);
     }
 
 

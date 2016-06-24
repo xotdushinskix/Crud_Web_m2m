@@ -116,14 +116,6 @@ public class Login extends Forward {
             }
         }
 
-
-        try {
-            super.requestAction(request);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
     }
 
 

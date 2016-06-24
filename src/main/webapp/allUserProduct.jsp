@@ -10,44 +10,9 @@
            uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>All users info</title>
+    <title>Main Page</title>
 </head>
 <body>
-<h3>Information and action</h3>
-
-
-<%--<h3>All users list:</h3>--%>
-<%--<table border="2">--%>
-    <%--<thead>--%>
-    <%--<tr>--%>
-        <%--<th>User Id</th>--%>
-        <%--<th>First Name</th>--%>
-        <%--<th>Last Name</th>--%>
-        <%--<th>Shop Experience</th>--%>
-        <%--<th>Update</th>--%>
-        <%--<th>Delete</th>--%>
-        <%--<th>Purchases</th>--%>
-    <%--</tr>--%>
-    <%--</thead>--%>
-    <%--<tbody>--%>
-        <%--<c:forEach items="${users}" var="user1">--%>
-            <%--<tr>--%>
-                <%--<td>${user1.userId}</td>--%>
-                <%--<td>${user1.firstName}</td>--%>
-                <%--<td>${user1.lastName}</td>--%>
-                <%--<td>${user1.shopExperience}</td>--%>
-                <%--<td><a href="ShowAll?action=updateUser&userId=<c:out value="${user1.userId}"/>">Update</a></td>--%>
-                <%--<td><a href="ShowAll?action=deleteUser&userId=<c:out value="${user1.userId}"/>">Delete</a></td>--%>
-                <%--<td><a href="ShowAll?action=watchUserPurchases&userId=<c:out value="${user1.userId}"/>">Show</a></td>--%>
-            <%--</tr>--%>
-        <%--</c:forEach>--%>
-    <%--</tbody>--%>
-<%--</table>--%>
-
-
-
-<%--<p><a href="ShowAll?action=addUser">Add User</a></p>--%>
-<%--<br>--%>
 
 <h3>All products list:</h3>
 <table border="2">
@@ -79,12 +44,13 @@
     </tbody>
 </table>
 
-<%--<c:if test="${sessionScope.userLogin == null}" > <a href="/login" style="position: absolute; top: 2%; right: 2%;">Login</a> </c:if>--%>
 <c:if test="${sessionScope.userLogin != null}" > <jsp:include page="logout.html" /> </c:if>
 
 <p style="position: absolute; top: 2%; right: 8%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
 <p><c:if test="${sessionScope.userLogin == null}" > <%@include file="/login.jsp" %> </c:if></p>
-<p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello, <c:out value="${sessionScope.userName}"/></c:if></p>
+
+<p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
+                                        <a href="user_page"><c:out value="${sessionScope.userName}"/></a></c:if></p>
 
 </body>
 </html>
