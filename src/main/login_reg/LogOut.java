@@ -18,6 +18,7 @@ public class LogOut extends Forward {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        session.getAttribute("userLogin");
         session.invalidate();
         response.sendRedirect("/products");
     }

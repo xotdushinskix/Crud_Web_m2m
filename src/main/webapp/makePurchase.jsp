@@ -14,24 +14,28 @@
 </head>
 <body>
 
-  <form action="MakePurchase" method="post">
-    Select customer id : <input type="text" name="userIDpurchase"/>
+  <form action="/make_purchase" method="post">
+    Product ID : <input type="text" readonly="readonly" name="productIdForPurchase" value="<c:out value="${productId}" />" />
     <br/>
-    Product ID : <input type="text" readonly="readonly" name="productIdForPurchase" value="<c:out value="${product.productId}" />" />
+    Product Brand : <input type="text" readonly="readonly" name="productbrand" value="<c:out value="${productBrand}" />" />
     <br/>
-    Product Brand : <input type="text" readonly="readonly" name="productbrand" value="<c:out value="${product.productBrand}" />" />
+    Product Model : <input type="text" readonly="readonly" name="productmodel" value="<c:out value="${productModel}" />" />
     <br/>
-    Product Model : <input type="text" readonly="readonly" name="productmodel" value="<c:out value="${product.productModel}" />" />
+    Product Stock : <input type="text" readonly="readonly" name="productstock" value="<c:out value="${productStock}" />" />
     <br/>
-    Product Stock : <input type="text" readonly="readonly" name="productstock" value="<c:out value="${product.productStock}" />" />
-    <br/>
-    Product MPN : <input type="text" readonly="readonly" name="productmpn" value="<c:out value="${product.productMPN}" />" />
+    Product MPN : <input type="text" readonly="readonly" name="productmpn" value="<c:out value="${productMPN}" />" />
     <br/>
     Select purchase quantity : <input type="text" name="productStockForPurchase"/>
     <br/>
-    <input type="submit" value="Make Purchase!" name="makePurchase"/>
+    <input type="submit" value="Make Purchase" name="makePurchase"/>
   </form>
   <br>
-  <td><a href="products_and_users">Back To Main Page</a></td>
+  <p style="position: absolute; top: 4%; right: 5.2%"><a href="products">Back To Main Page</a></p>
+  <jsp:include page="logout.html" />
+  <p style="position: absolute; top: 0%; right: 8%;"> Hello, <a href="user_page">
+                                                                <c:out value="${sessionScope.firstName}"/></a></p>
+
+  <p style="position: absolute; top: 19%; left: 0.5%; color: rgba(53, 122, 31, 0.96); width: 100%"><c:out value="${messageToCart}"/></p>
+
 </body>
 </html>

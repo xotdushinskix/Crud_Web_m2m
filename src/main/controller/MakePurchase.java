@@ -13,15 +13,18 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
 /**
  * Created by FromxSoul on 21.05.2016.
  */
-@WebServlet("/MakePurchase")
+@WebServlet("/make_purchase")
 public class MakePurchase extends Forward {
-    private static String SHOW_ALL = "/allUserProduct.jsp";
+    private String SHOW_ALL = "/allUserProduct.jsp";
+    private String IMPSBL_PURCH = "/impossiblePurchaseBeforeLogin.jsp";
+    private String MAKE_PURCHASE = "/makePurchase.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
@@ -29,45 +32,75 @@ public class MakePurchase extends Forward {
     private UserProducts userProducts;
     private Product product;
     private User user;
+    private String message;
+
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HibernateUtil.getSessionFactory();
-        String forwardString = null;
-
-        if (request.getParameter("makePurchase") !=null) {
-            int userId = Integer.parseInt(request.getParameter("userIDpurchase"));
-
-            int productId = Integer.parseInt(request.getParameter("productIdForPurchase"));
-            int productStock = Integer.parseInt(request.getParameter("productStockForPurchase"));
-
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        if (session.getAttribute("userLogin") == null) {
+            super.forward(IMPSBL_PURCH, request, response);
+        } else {
             try {
-                user = userDao.getUser(userId);
+                String userLogin = session.getAttribute("userLogin").toString();
+                user = userDao.getUserByLogin(userLogin);
+                String firstName = user.getFirstName();
+                int productId = Integer.parseInt(request.getParameter("productId"));
                 product = productDao.getProduct(productId);
-                int stock = product.getProductStock() - productStock;
-                product.setProductStock(stock);
-
-                userProducts = new UserProducts();
-                userProducts.setBoughtQuantity(productStock);
-                userProducts.setProduct(product);
-                userProducts.setUser(user);
-
-                user.getUserProducts().add(userProducts);
-                product.getUserProducts().add(userProducts);
-
-                userDao.editUser(user);
-                productDao.editProduct(product);
-
-                super.requestAction(request);
-                request.setAttribute("userProducts", userProductsDao.getUserProducts(userProducts.getUserProductsId()));
-                forwardString = SHOW_ALL;
-
+                request.setAttribute("productId", productId);
+                request.setAttribute("productBrand", product.getProductBrand());
+                request.setAttribute("productModel", product.getProductModel());
+                request.setAttribute("productStock", product.getProductStock());
+                request.setAttribute("productMPN", product.getProductMPN());
+                session.setAttribute("firstName", firstName);
+                super.forward(MAKE_PURCHASE, request, response);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
+    }
 
-        super.forward(forwardString, request, response);
+
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HibernateUtil.getSessionFactory();
+
+        HttpSession session = request.getSession();
+        String userLogin = session.getAttribute("userLogin").toString();
+
+        int productId = Integer.parseInt(request.getParameter("productIdForPurchase"));
+        int productStock = Integer.parseInt(request.getParameter("productStockForPurchase"));
+
+        try {
+            user = userDao.getUserByLogin(userLogin);
+            product = productDao.getProduct(productId);
+            int stock = product.getProductStock() - productStock;
+            product.setProductStock(stock);
+
+            userProducts = new UserProducts();
+            userProducts.setBoughtQuantity(productStock);
+            userProducts.setProduct(product);
+            userProducts.setUser(user);
+
+            user.getUserProducts().add(userProducts);
+            product.getUserProducts().add(userProducts);
+
+            userDao.editUser(user);
+            productDao.editProduct(product);
+
+            //super.requestAction(request);
+            //request.setAttribute("userProducts", userProductsDao.getUserProducts(userProducts.getUserProductsId()));
+            message = "Product successfully added to the cart";
+            request.setAttribute("messageToCart", message);
+            super.forward(MAKE_PURCHASE, request, response);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        //super.forward(SHOW_ALL, request, response);
 
     }
 

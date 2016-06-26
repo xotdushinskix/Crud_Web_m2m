@@ -11,7 +11,7 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form action="/products/login_error" method="post" style="position: fixed; top: 8%; left: 82%">
+    <form action="/products" method="post" style="position: fixed; top: 8%; left: 80%">
         Login: <input type="text" name="login"><br> </br>
         Password: <input type="password" name="password"><br> </br>
         <input type="submit" value="Enter"><br> </br>

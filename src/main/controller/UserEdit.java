@@ -64,7 +64,7 @@ public class UserEdit extends Forward{
                     user.setFirstName(firstName);
                     userDao.editUser(user);
                     session.setAttribute("userName", user.getFirstName());
-                    message = "Name is successfully updated";
+                    message = "Name successfully updated";
                     request.setAttribute("message", message);
                     userAttribute(request, response);
                 } catch (SQLException e) {
@@ -82,7 +82,7 @@ public class UserEdit extends Forward{
                 try {
                     user.setLastName(lastName);
                     userDao.editUser(user);
-                    message = "Last name is successfully updated";
+                    message = "Last name successfully updated";
                     request.setAttribute("message1", message);
                     userAttribute(request, response);
                 } catch (SQLException e) {
@@ -102,7 +102,7 @@ public class UserEdit extends Forward{
             try {
                 user.setShopExperience(shopExperience);
                 userDao.editUser(user);
-                message = "Shop experience is successfully updated";
+                message = "Shop experience successfully updated";
                 request.setAttribute("message2", message);
                 userAttribute(request, response);
             } catch (SQLException e) {

@@ -23,8 +23,6 @@
         <th>Model</th>
         <th>Stock</th>
         <th>MPN</th>
-        <%--<th>Update</th>--%>
-        <%--<th>Delete</th>--%>
         <th>Add to cart</th>
     </tr>
     </thead>
@@ -36,9 +34,7 @@
             <td>${product1.productModel}</td>
             <td>${product1.productStock}</td>
             <td>${product1.productMPN}</td>
-            <%--<td><a href="ShowAll?action=updateProduct&productId=<c:out value="${product1.productId}"/>">Update</a></td>--%>
-            <%--<td><a href="ShowAll?action=deleteProduct&productId=<c:out value="${product1.productId}"/>">Delete</a></td>--%>
-            <td><a href="ShowAll?action=purchase&productId=<c:out value="${product1.productId}"/>">To cart</a></td>
+            <td><a href="make_purchase?productId=<c:out value="${product1.productId}"/>">To cart</a></td>
         </tr>
     </c:forEach>
     </tbody>
@@ -46,11 +42,17 @@
 
 <c:if test="${sessionScope.userLogin != null}" > <jsp:include page="logout.html" /> </c:if>
 
-<p style="position: absolute; top: 2%; right: 8%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
+<p style="position: absolute; top: 0%; right: 15%;"><c:if test="${sessionScope.userLogin == null}" > Hello, Guest </c:if></p>
 <p><c:if test="${sessionScope.userLogin == null}" > <%@include file="/login.jsp" %> </c:if></p>
 
 <p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
                                         <a href="user_page"><c:out value="${sessionScope.userName}"/></a></c:if></p>
+
+<p style="position: absolute; top: 5%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
+    <a href="cart">Cart</a></c:if></p>
+
+<p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin == null}" >
+    <a href="registration">Registration</a></c:if></p>
 
 </body>
 </html>

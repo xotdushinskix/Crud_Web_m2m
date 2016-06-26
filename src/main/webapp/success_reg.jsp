@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: FromxSoul
-  Date: 06.06.2016
-  Time: 23:55
+  Date: 25.06.2016
+  Time: 17:03
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -13,8 +13,6 @@
     <title></title>
 </head>
 <body>
-  Thanks for purchase! Your order id is : <c:out value="${orderId}"/>
-  <br>
-  <p style="position: absolute; top: 4%; right: 1%"><a href="products">Back To Main Page</a></p>
+ Hi, <c:out value="${firstName}"/>! You are successfully registered. Please, <a href="/products">login</a> again.
 </body>
 </html>
