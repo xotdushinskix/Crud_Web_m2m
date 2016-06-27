@@ -48,7 +48,7 @@
 <p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
                                         <a href="user_page"><c:out value="${sessionScope.userName}"/></a></c:if></p>
 
-<p style="position: absolute; top: 5%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
+<p style="position: absolute; top: 3%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" >
     <a href="cart">Cart</a></c:if></p>
 
 <p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin == null}" >

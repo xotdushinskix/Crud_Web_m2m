@@ -15,6 +15,10 @@
 <body>
   Thanks for purchase! Your order id is : <c:out value="${orderId}"/>
   <br>
-  <p style="position: absolute; top: 4%; right: 1%"><a href="products">Back To Main Page</a></p>
+  <p style="position: absolute; top: 4%; right: 6%"><a href="products">Back To Main Page</a></p>
+  <p style="position: absolute; top: 8%; right: 6%"><a href="/cart">Back To Cart</a></p>
+  <jsp:include page="logout.html" />
+  <p style="position: absolute; top: 0%; right: 6%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
+      <a href="user_page"><c:out value="${sessionScope.userName}"/></a></c:if></p>
 </body>
 </html>

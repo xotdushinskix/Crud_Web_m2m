@@ -34,6 +34,7 @@
   <jsp:include page="logout.html" />
   <p style="position: absolute; top: 0%; right: 8%;"> Hello, <a href="user_page">
                                                                 <c:out value="${sessionScope.firstName}"/></a></p>
+  <p style="position: absolute; top: 8%; right: 6%"><a href="/cart">Back To Cart</a></p>
 
   <p style="position: absolute; top: 19%; left: 0.5%; color: rgba(53, 122, 31, 0.96); width: 100%"><c:out value="${messageToCart}"/></p>
 

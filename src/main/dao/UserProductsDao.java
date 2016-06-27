@@ -1,5 +1,6 @@
 package dao;
 
+import table.Order;
 import table.Product;
 import table.User;
 import table.UserProducts;

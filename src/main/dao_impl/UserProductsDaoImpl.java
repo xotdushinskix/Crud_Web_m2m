@@ -4,6 +4,7 @@ import dao.UserProductsDao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
+import table.Order;
 import table.Product;
 import table.User;
 import table.UserProducts;
@@ -119,7 +120,8 @@ public class UserProductsDaoImpl implements UserProductsDao {
             session = HibernateUtil.getSessionFactory().openSession();
             session.beginTransaction();
             Criteria criteria = session.createCriteria(UserProducts.class)
-                    .add(Restrictions.like("user", user));
+                    .add(Restrictions.like("user", user))
+                    .add(Restrictions.isNotNull("order.orderId"));
             userProducts = criteria.list();
         } catch (Exception e) {
             e.printStackTrace();

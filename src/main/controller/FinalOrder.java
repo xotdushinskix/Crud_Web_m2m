@@ -33,10 +33,7 @@ public class FinalOrder extends Forward{
     private String SHOW_ORDER = "/showOrder.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
-    private UserProductsDao userProductsDao = fabric.getUserProductsDao();
-    private ProductDao productDao = fabric.getProductDao();
-    private Product product;
-    private UserProducts userProducts;
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -68,55 +65,11 @@ public class FinalOrder extends Forward{
                 }
                 int orderId = order.getOrderId();
                 request.setAttribute("orderId", orderId);
+                session.setAttribute("userName", user.getFirstName());
             } catch (SQLException e) {
                 e.printStackTrace();
             }
             super.forward(SHOW_ORDER, request, response);
-
-
-        } else if (request.getParameter("update_quantity") != null) {
-            int prodPurchQuantityAfterEdit = Integer.parseInt(request.getParameter("b_quantity"));
-            int orderLineId = Integer.parseInt(request.getParameter("orderLineId"));
-
-            int newProdStock = 0;
-            try {
-                userProducts = userProductsDao.getUserProducts(orderLineId);
-                System.out.println(userProducts.getUserProductsId());
-                int productStock = userProducts.getProduct().getProductStock();
-                UserProducts orderLine = userProductsDao.getUserProducts(orderLineId);
-                int prodPurchQuantityBeforeEdit = orderLine.getBoughtQuantity();
-                System.out.println(prodPurchQuantityBeforeEdit + " " + prodPurchQuantityAfterEdit);
-                if (prodPurchQuantityBeforeEdit < prodPurchQuantityAfterEdit) {
-                    int diffVar = prodPurchQuantityAfterEdit - prodPurchQuantityBeforeEdit;
-                    newProdStock = productStock - diffVar;
-                } else if (prodPurchQuantityBeforeEdit > prodPurchQuantityAfterEdit) {
-                    int diffVar = prodPurchQuantityBeforeEdit - prodPurchQuantityAfterEdit;
-                    newProdStock = productStock + diffVar;
-                }
-                System.out.println(newProdStock);
-                int productId = userProducts.getProduct().getProductId();
-                product = productDao.getProduct(productId);
-                product.setProductStock(newProdStock);
-                productDao.editProduct(product);
-
-                userProducts.setBoughtQuantity(prodPurchQuantityAfterEdit);
-                userProductsDao.editUserProducts(userProducts);
-
-
-
-//                int userId = userProducts.getUser().getUserId();
-//                user = userDao.getUser(userId);
-
-
-
-//                List<UserProducts> userProducts = userProductsDao.getAllUsProdByRequiredUserId(user);
-//                request.setAttribute("userProductsesNew", userProducts);
-
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
-            response.sendRedirect("/cart");
         }
 
     }

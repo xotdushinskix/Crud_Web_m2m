@@ -14,11 +14,10 @@
   </head>
   <body>
     <h3>User purchase:</h3>
-    <form action="finalize_order" method="post">
       <table border="1">
         <thead>
         <tr>
-          <th>Order Line</th>
+          <th>Order Line Id</th>
           <th>Brand</th>
           <th>Model</th>
           <th>Quantity</th>
@@ -27,22 +26,49 @@
         <tbody>
           <c:forEach items="${userProductsesNew}" var="userProd">
             <tr>
-              <%--<td>${userProd.userProductsId}</td>--%>
-              <td><input type="text" readonly="readonly" name="orderLineId" value="<c:out value="${userProd.userProductsId}"/>" /></td>
+              <td>${userProd.userProductsId}</td>
               <td>${userProd.product.productBrand}</td>
               <td>${userProd.product.productModel}</td>
-              <td><input type="text" name="b_quantity" value="<c:out value="${userProd.boughtQuantity}"/>" /></td>
-              <td><input type="submit" value="Update quantity" name="update_quantity"/></td>
-              <td><input type="submit" value="Delete line" /></td>
+              <td>${userProd.boughtQuantity}</td>
+              <td><a href="cart/change?action=update&order_line_id=<c:out value="${userProd.userProductsId}"/>">Update</a></td>
+              <td><a href="cart/change?action=delete&order_line_id=<c:out value="${userProd.userProductsId}"/>">Delete</a></td>
             </tr>
           </c:forEach>
         </tbody>
       </table>
-      <br>
+
+    <br>
+    <form action="finalize_order" method="post">
       <input type="submit" value="Finalize order" name="final_order"/>
     </form>
+
+
+      <h3>Order History</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Order Id</th>
+            <th>Created Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <c:forEach items="${userProductsOrder}" var="userProdOrder">
+            <tr>
+              <td>${userProdOrder.order.orderId}</td>
+              <td>${userProdOrder.order.currentData}</td>
+              <td><a href="cart/order_lines?orderId=<c:out value="${userProdOrder.order.orderId}"/>">Show Lines</a></td>
+            </tr>
+          </c:forEach>
+        </tbody>
+      </table>
+
+
     <br>
     <p style="position: absolute; top: 4%; right: 1%"><a href="products">Back To Main Page</a></p>
     <jsp:include page="logout.html" />
+
+    <p style="position: absolute; top: 0%; right: 8%;"> <c:if test="${sessionScope.userLogin != null}" > Hello,
+      <a href="user_page"><c:out value="${sessionScope.userName}"/></a></c:if></p>
+
   </body>
 </html>
