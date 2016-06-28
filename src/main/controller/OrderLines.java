@@ -1,11 +1,9 @@
 package controller;
 
 import dao.UserDao;
-import dao.UserProductsDao;
 import fabric.Fabric;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
-import table.User;
 import table.UserProducts;
 import util.HibernateUtil;
 

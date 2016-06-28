@@ -22,13 +22,11 @@ import java.sql.SQLException;
  */
 @WebServlet("/make_purchase")
 public class MakePurchase extends Forward {
-    private String SHOW_ALL = "/allUserProduct.jsp";
     private String IMPSBL_PURCH = "/impossiblePurchaseBeforeLogin.jsp";
     private String MAKE_PURCHASE = "/makePurchase.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
-    private UserProductsDao userProductsDao = fabric.getUserProductsDao();
     private UserProducts userProducts;
     private Product product;
     private User user;
@@ -89,8 +87,6 @@ public class MakePurchase extends Forward {
             userDao.editUser(user);
             productDao.editProduct(product);
 
-            //super.requestAction(request);
-            //request.setAttribute("userProducts", userProductsDao.getUserProducts(userProducts.getUserProductsId()));
             message = "Product successfully added to the cart";
             request.setAttribute("messageToCart", message);
             super.forward(MAKE_PURCHASE, request, response);
@@ -99,8 +95,6 @@ public class MakePurchase extends Forward {
             e.printStackTrace();
         }
 
-
-        //super.forward(SHOW_ALL, request, response);
 
     }
 

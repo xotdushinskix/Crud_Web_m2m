@@ -1,22 +1,16 @@
 package controller;
 
 import dao.ProductDao;
-import dao.UserDao;
-import dao.UserProductsDao;
 import fabric.Fabric;
 import table.User;
-import table.UserProducts;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by nikita on 18.05.16.

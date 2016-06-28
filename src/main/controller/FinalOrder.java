@@ -1,14 +1,12 @@
 package controller;
 
 import dao.OrderDao;
-import dao.ProductDao;
 import dao.UserDao;
 import dao.UserProductsDao;
 import fabric.Fabric;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 import table.Order;
-import table.Product;
 import table.UserProducts;
 import util.HibernateUtil;
 

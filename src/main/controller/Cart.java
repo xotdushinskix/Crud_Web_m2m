@@ -1,13 +1,10 @@
 package controller;
 
-import dao.ProductDao;
 import dao.UserDao;
 import dao.UserProductsDao;
 import fabric.Fabric;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
-import table.Order;
-import table.Product;
 import table.User;
 import table.UserProducts;
 import util.HibernateUtil;
@@ -28,20 +25,11 @@ import java.util.List;
 @WebServlet("/cart")
 public class Cart extends Forward {
 
-    private static String SHOW_ALL = "/allUserProduct.jsp";
-    private static String ADD_EDIT_USER_PAGE = "/editAndAddUser.jsp";
-    private static String ADD_EDIT_PRODUCT_PAGE = "/editAndADDProduct.jsp";
-    private static String MAKE_PURCHASE = "/makePurchase.jsp";
     private static String SHOW_PURCHASE = "/showPurchase.jsp";
-    private static String CHANGE_ORDER = "/changeProdQuantityInOrder.jsp";
-    private String CHANGE_QUANTITY = "/changeProdQuantityInOrder.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
-    private ProductDao productDao = fabric.getProductDao();
     private UserProductsDao userProductsDao = fabric.getUserProductsDao();
     private User user = new User();
-    private Product product = new Product();
-    private UserProducts userProducts = new UserProducts();
     String forward;
 
 

@@ -20,7 +20,6 @@ import java.sql.SQLException;
 @WebServlet("/AddEdit")
 public class AddEdit extends Forward {
 
-    private static String SHOW_ALL = "/allUserProduct.jsp";
     private Fabric fabric = Fabric.getInstance();
     private UserDao userDao = fabric.getUserDao();
     private ProductDao productDao = fabric.getProductDao();
@@ -96,7 +95,6 @@ public class AddEdit extends Forward {
                 e.printStackTrace();
             }
         }
-        //super.forward(SHOW_ALL, request, response);
         response.sendRedirect("/products_and_users");
     }
 }
